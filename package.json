@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "subtitles-parser": "^0.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.8.0"
+  }
+}
