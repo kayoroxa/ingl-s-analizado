@@ -9,7 +9,7 @@ const srtDatas = folderAnalyse(pathJoin(__dirname, './movie srt'), {
 
 const allText = srtDatas
   .reduce((acc, cur) => {
-    const splittedByPunctuation = cur.join(' ').split(/[\.*|\?|\!]/i)
+    const splittedByPunctuation = cur.join(' ').split(/[.*|?|!]/i)
     // console.log(splittedByPunctuation)
     return [...acc, ...splittedByPunctuation]
   }, [])
