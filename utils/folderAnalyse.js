@@ -23,6 +23,8 @@ function readFiles(files) {
     const strFile = fs.readFileSync(file, { encoding: 'utf8' })
     if (file.endsWith('.srt')) {
       return parser.fromSrt(strFile)
+    } else if (file.endsWith('.json')) {
+      return JSON.parse(strFile)
     }
     return strFile
   })
