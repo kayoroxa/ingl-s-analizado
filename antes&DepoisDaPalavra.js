@@ -24,7 +24,8 @@ function findBeforeAndAfterPercent(word, allText, options = {}) {
     const textSplittedWord = text
       .trim()
       .toLowerCase()
-      .match(/[a-zA-Z']+/g)
+      .match(new RegExp(`\\b${word}\\b|[a-zA-Z']+`, 'gi'))
+
     if (textSplittedWord) {
       const indexWord = textSplittedWord.indexOf(word)
       if (indexWord > -1) {
@@ -85,11 +86,98 @@ function findBeforeAndAfterPercent(word, allText, options = {}) {
     after: sortAfter.slice(0, 10),
   }
 }
-const beforeAndAfter = findBeforeAndAfterPercent('gonna', allText, {
-  numberOfWords: 2,
+const word = 'you have'
+
+const beforeAndAfter = findBeforeAndAfterPercent(word, allText, {
+  numberOfWords: 1,
 })
 console.log(beforeAndAfter)
 
+const beforeAndAfter2 = findBeforeAndAfterPercent(word, allText, {
+  numberOfWords: 2,
+})
+console.log(beforeAndAfter2)
+
+// const mesquinha = [
+//   'but',
+//   'i',
+//   'you',
+//   'he',
+//   'she',
+//   'it',
+//   'they',
+//   'we',
+//   'us',
+//   'them',
+//   'her',
+//   'him',
+//   "i'll",
+//   "we'll",
+//   "you'll",
+//   "i'm",
+//   "you're",
+//   "he's",
+//   'my',
+//   'an',
+//   'the',
+//   'your',
+//   'me',
+//   'and',
+//   'man',
+//   'car',
+// ]
+// function catalogar() {
+//   const catalog = []
+//   const words = []
+//   allText.slice(0, 50).forEach((text, i) => {
+//     console.log(`${i}/${200}`)
+//     const textSplittedWord = text
+//       .trim()
+//       .toLowerCase()
+//       .match(/[a-zA-Z']+/g)
+
+//     textSplittedWord.forEach(word => {
+//       if (!words.includes(word)) {
+//         words.push(word)
+//         if (mesquinha.includes(word)) return
+//         const beforeAndAfter = findBeforeAndAfterPercent(word, allText, {
+//           numberOfWords: 2,
+//         })
+//         beforeAndAfter.before.slice(0, 3).forEach(before => {
+//           if (
+//             before.count > 25 &&
+//             // before.count < 40 &&
+//             !mesquinha.includes(before.word)
+//           ) {
+//             catalog.push(before.word + ' ' + word)
+//           }
+//         })
+//         beforeAndAfter.after.slice(0, 3).forEach(after => {
+//           if (
+//             after.count > 25 &&
+//             // after.count < 40 &&
+//             !mesquinha.includes(after.word)
+//           ) {
+//             catalog.push(word + ' ' + after.word)
+//           }
+//         })
+//       }
+//     })
+//   })
+//   // unique catalog
+//   const uniqueCatalog = catalog.filter((word, i) => {
+//     return catalog.indexOf(word) === i
+//   })
+//   return uniqueCatalog
+// }
+
+// const catalogação = catalogar()
+// //save json
+// const fs = require('fs')
+// fs.writeFileSync(
+//   pathJoin(__dirname, './catalog.json'),
+//   JSON.stringify(catalogação, null, 2)
+// )
 // function createText(startWord, len) {
 //   //findBeforeAndAfterPercent
 //   // loop on len
