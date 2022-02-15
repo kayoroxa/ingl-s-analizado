@@ -86,7 +86,7 @@ function findBeforeAndAfterPercent(word, allText, options = {}) {
     after: sortAfter.slice(0, 10),
   }
 }
-const word = 'you have'
+const word = 'if'
 
 const beforeAndAfter = findBeforeAndAfterPercent(word, allText, {
   numberOfWords: 1,
