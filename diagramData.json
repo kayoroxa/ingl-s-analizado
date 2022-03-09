@@ -1,0 +1,322 @@
+{
+  "nodes": [
+    {
+      "key": "thank",
+      "color": "orange"
+    },
+    {
+      "key": "you",
+      "color": "orange"
+    },
+    {
+      "key": "don't",
+      "color": "orange"
+    },
+    {
+      "key": "i",
+      "color": "orange"
+    },
+    {
+      "key": "mean",
+      "color": "orange"
+    },
+    {
+      "key": "going",
+      "color": "orange"
+    },
+    {
+      "key": "to",
+      "color": "orange"
+    },
+    {
+      "key": "it's",
+      "color": "orange"
+    },
+    {
+      "key": "a",
+      "color": "orange"
+    },
+    {
+      "key": "is",
+      "color": "orange"
+    },
+    {
+      "key": "that",
+      "color": "orange"
+    },
+    {
+      "key": "what",
+      "color": "orange"
+    },
+    {
+      "key": "do",
+      "color": "orange"
+    },
+    {
+      "key": "can't",
+      "color": "orange"
+    },
+    {
+      "key": "if",
+      "color": "orange"
+    },
+    {
+      "key": "on",
+      "color": "orange"
+    },
+    {
+      "key": "the",
+      "color": "orange"
+    },
+    {
+      "key": "am",
+      "color": "orange"
+    },
+    {
+      "key": "it",
+      "color": "orange"
+    },
+    {
+      "key": "was",
+      "color": "orange"
+    },
+    {
+      "key": "out",
+      "color": "orange"
+    },
+    {
+      "key": "of",
+      "color": "orange"
+    },
+    {
+      "key": "know",
+      "color": "orange"
+    },
+    {
+      "key": "i'm",
+      "color": "orange"
+    },
+    {
+      "key": "not",
+      "color": "orange"
+    },
+    {
+      "key": "are",
+      "color": "orange"
+    },
+    {
+      "key": "did",
+      "color": "orange"
+    },
+    {
+      "key": "have",
+      "color": "orange"
+    },
+    {
+      "key": "want",
+      "color": "orange"
+    },
+    {
+      "key": "in",
+      "color": "orange"
+    },
+    {
+      "key": "and",
+      "color": "orange"
+    },
+    {
+      "key": "think",
+      "color": "orange"
+    },
+    {
+      "key": "be",
+      "color": "orange"
+    },
+    {
+      "key": "this",
+      "color": "orange"
+    },
+    {
+      "key": "come",
+      "color": "orange"
+    },
+    {
+      "key": "all",
+      "color": "orange"
+    },
+    {
+      "key": "right",
+      "color": "orange"
+    },
+    {
+      "key": "can",
+      "color": "orange"
+    }
+  ],
+  "links": [
+    {
+      "from": "thank",
+      "to": "you"
+    },
+    {
+      "from": "you",
+      "to": "don't"
+    },
+    {
+      "from": "i",
+      "to": "mean"
+    },
+    {
+      "from": "going",
+      "to": "to"
+    },
+    {
+      "from": "it's",
+      "to": "a"
+    },
+    {
+      "from": "is",
+      "to": "that"
+    },
+    {
+      "from": "what",
+      "to": "is"
+    },
+    {
+      "from": "what",
+      "to": "do"
+    },
+    {
+      "from": "i",
+      "to": "can't"
+    },
+    {
+      "from": "if",
+      "to": "you"
+    },
+    {
+      "from": "on",
+      "to": "the"
+    },
+    {
+      "from": "i",
+      "to": "am"
+    },
+    {
+      "from": "it",
+      "to": "was"
+    },
+    {
+      "from": "out",
+      "to": "of"
+    },
+    {
+      "from": "know",
+      "to": "what"
+    },
+    {
+      "from": "i'm",
+      "to": "not"
+    },
+    {
+      "from": "are",
+      "to": "you"
+    },
+    {
+      "from": "do",
+      "to": "you"
+    },
+    {
+      "from": "did",
+      "to": "you"
+    },
+    {
+      "from": "you",
+      "to": "know"
+    },
+    {
+      "from": "you",
+      "to": "are"
+    },
+    {
+      "from": "you",
+      "to": "have"
+    },
+    {
+      "from": "you",
+      "to": "want"
+    },
+    {
+      "from": "in",
+      "to": "the"
+    },
+    {
+      "from": "to",
+      "to": "the"
+    },
+    {
+      "from": "and",
+      "to": "i"
+    },
+    {
+      "from": "i",
+      "to": "don't"
+    },
+    {
+      "from": "i",
+      "to": "have"
+    },
+    {
+      "from": "i",
+      "to": "was"
+    },
+    {
+      "from": "i",
+      "to": "know"
+    },
+    {
+      "from": "i",
+      "to": "think"
+    },
+    {
+      "from": "want",
+      "to": "to"
+    },
+    {
+      "from": "have",
+      "to": "to"
+    },
+    {
+      "from": "to",
+      "to": "be"
+    },
+    {
+      "from": "have",
+      "to": "a"
+    },
+    {
+      "from": "this",
+      "to": "is"
+    },
+    {
+      "from": "what",
+      "to": "are"
+    },
+    {
+      "from": "come",
+      "to": "on"
+    },
+    {
+      "from": "don't",
+      "to": "know"
+    },
+    {
+      "from": "all",
+      "to": "right"
+    },
+    {
+      "from": "i",
+      "to": "can"
+    }
+  ]
+}

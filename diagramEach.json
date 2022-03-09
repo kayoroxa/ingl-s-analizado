@@ -1,0 +1,4877 @@
+{
+  "you": {
+    "before": [
+      {
+        "word": "are",
+        "count": 1666
+      },
+      {
+        "word": "do",
+        "count": 1267
+      },
+      {
+        "word": "did",
+        "count": 511
+      },
+      {
+        "word": "if",
+        "count": 477
+      },
+      {
+        "word": "thank",
+        "count": 443
+      },
+      {
+        "word": "for",
+        "count": 388
+      },
+      {
+        "word": "to",
+        "count": 361
+      },
+      {
+        "word": "see",
+        "count": 324
+      },
+      {
+        "word": "with",
+        "count": 288
+      },
+      {
+        "word": "have",
+        "count": 281
+      }
+    ],
+    "after": [
+      {
+        "word": "'re",
+        "count": 2168
+      },
+      {
+        "word": "know",
+        "count": 1154
+      },
+      {
+        "word": "are",
+        "count": 581
+      },
+      {
+        "word": "have",
+        "count": 520
+      },
+      {
+        "word": "want",
+        "count": 514
+      },
+      {
+        "word": "don't",
+        "count": 413
+      },
+      {
+        "word": "can",
+        "count": 380
+      },
+      {
+        "word": "think",
+        "count": 358
+      },
+      {
+        "word": "'ve",
+        "count": 328
+      },
+      {
+        "word": "to",
+        "count": 323
+      }
+    ]
+  },
+  "the": {
+    "before": [
+      {
+        "word": "in",
+        "count": 916
+      },
+      {
+        "word": "to",
+        "count": 528
+      },
+      {
+        "word": "on",
+        "count": 480
+      },
+      {
+        "word": "of",
+        "count": 357
+      },
+      {
+        "word": "for",
+        "count": 346
+      },
+      {
+        "word": "is",
+        "count": 309
+      },
+      {
+        "word": "at",
+        "count": 291
+      },
+      {
+        "word": "all",
+        "count": 254
+      },
+      {
+        "word": "with",
+        "count": 238
+      },
+      {
+        "word": "what",
+        "count": 210
+      }
+    ],
+    "after": [
+      {
+        "word": "way",
+        "count": 192
+      },
+      {
+        "word": "hell",
+        "count": 188
+      },
+      {
+        "word": "same",
+        "count": 172
+      },
+      {
+        "word": "one",
+        "count": 135
+      },
+      {
+        "word": "time",
+        "count": 129
+      },
+      {
+        "word": "fuck",
+        "count": 121
+      },
+      {
+        "word": "first",
+        "count": 111
+      },
+      {
+        "word": "world",
+        "count": 103
+      },
+      {
+        "word": "best",
+        "count": 101
+      },
+      {
+        "word": "truth",
+        "count": 100
+      }
+    ]
+  },
+  "i": {
+    "before": [
+      {
+        "word": "and",
+        "count": 571
+      },
+      {
+        "word": "but",
+        "count": 354
+      },
+      {
+        "word": "no",
+        "count": 297
+      },
+      {
+        "word": "what",
+        "count": 258
+      },
+      {
+        "word": "well",
+        "count": 247
+      },
+      {
+        "word": "yeah",
+        "count": 244
+      },
+      {
+        "word": "if",
+        "count": 239
+      },
+      {
+        "word": "can",
+        "count": 212
+      },
+      {
+        "word": "oh",
+        "count": 170
+      },
+      {
+        "word": "so",
+        "count": 168
+      }
+    ],
+    "after": [
+      {
+        "word": "'m",
+        "count": 3528
+      },
+      {
+        "word": "don't",
+        "count": 1231
+      },
+      {
+        "word": "'ll",
+        "count": 987
+      },
+      {
+        "word": "have",
+        "count": 635
+      },
+      {
+        "word": "'ve",
+        "count": 629
+      },
+      {
+        "word": "was",
+        "count": 581
+      },
+      {
+        "word": "know",
+        "count": 558
+      },
+      {
+        "word": "think",
+        "count": 547
+      },
+      {
+        "word": "am",
+        "count": 480
+      },
+      {
+        "word": "mean",
+        "count": 422
+      }
+    ]
+  },
+  "to": {
+    "before": [
+      {
+        "word": "want",
+        "count": 646
+      },
+      {
+        "word": "have",
+        "count": 626
+      },
+      {
+        "word": "going",
+        "count": 449
+      },
+      {
+        "word": "need",
+        "count": 327
+      },
+      {
+        "word": "you",
+        "count": 309
+      },
+      {
+        "word": "me",
+        "count": 249
+      },
+      {
+        "word": "trying",
+        "count": 207
+      },
+      {
+        "word": "got",
+        "count": 182
+      },
+      {
+        "word": "wanted",
+        "count": 157
+      },
+      {
+        "word": "used",
+        "count": 156
+      }
+    ],
+    "after": [
+      {
+        "word": "be",
+        "count": 695
+      },
+      {
+        "word": "the",
+        "count": 520
+      },
+      {
+        "word": "do",
+        "count": 396
+      },
+      {
+        "word": "me",
+        "count": 390
+      },
+      {
+        "word": "get",
+        "count": 338
+      },
+      {
+        "word": "go",
+        "count": 316
+      },
+      {
+        "word": "see",
+        "count": 311
+      },
+      {
+        "word": "you",
+        "count": 292
+      },
+      {
+        "word": "say",
+        "count": 165
+      },
+      {
+        "word": "make",
+        "count": 138
+      }
+    ]
+  },
+  "a": {
+    "before": [
+      {
+        "word": "have",
+        "count": 538
+      },
+      {
+        "word": "it's",
+        "count": 417
+      },
+      {
+        "word": "is",
+        "count": 352
+      },
+      {
+        "word": "for",
+        "count": 334
+      },
+      {
+        "word": "like",
+        "count": 283
+      },
+      {
+        "word": "was",
+        "count": 281
+      },
+      {
+        "word": "got",
+        "count": 260
+      },
+      {
+        "word": "in",
+        "count": 251
+      },
+      {
+        "word": "be",
+        "count": 249
+      },
+      {
+        "word": "not",
+        "count": 224
+      }
+    ],
+    "after": [
+      {
+        "word": "little",
+        "count": 374
+      },
+      {
+        "word": "good",
+        "count": 264
+      },
+      {
+        "word": "lot",
+        "count": 255
+      },
+      {
+        "word": "bit",
+        "count": 141
+      },
+      {
+        "word": "big",
+        "count": 124
+      },
+      {
+        "word": "minute",
+        "count": 114
+      },
+      {
+        "word": "great",
+        "count": 113
+      },
+      {
+        "word": "second",
+        "count": 99
+      },
+      {
+        "word": "few",
+        "count": 94
+      },
+      {
+        "word": "very",
+        "count": 91
+      }
+    ]
+  },
+  "and": {
+    "before": [
+      {
+        "word": "you",
+        "count": 140
+      },
+      {
+        "word": "me",
+        "count": 70
+      },
+      {
+        "word": "go",
+        "count": 59
+      }
+    ],
+    "after": [
+      {
+        "word": "i",
+        "count": 497
+      },
+      {
+        "word": "you",
+        "count": 220
+      },
+      {
+        "word": "the",
+        "count": 166
+      },
+      {
+        "word": "then",
+        "count": 161
+      },
+      {
+        "word": "a",
+        "count": 101
+      },
+      {
+        "word": "i'm",
+        "count": 94
+      },
+      {
+        "word": "he",
+        "count": 88
+      },
+      {
+        "word": "we",
+        "count": 81
+      },
+      {
+        "word": "it's",
+        "count": 73
+      },
+      {
+        "word": "that",
+        "count": 69
+      }
+    ]
+  },
+  "it": {
+    "before": [
+      {
+        "word": "is",
+        "count": 363
+      },
+      {
+        "word": "do",
+        "count": 320
+      },
+      {
+        "word": "about",
+        "count": 182
+      },
+      {
+        "word": "no",
+        "count": 151
+      },
+      {
+        "word": "get",
+        "count": 136
+      },
+      {
+        "word": "take",
+        "count": 132
+      },
+      {
+        "word": "but",
+        "count": 124
+      },
+      {
+        "word": "and",
+        "count": 117
+      },
+      {
+        "word": "like",
+        "count": 116
+      },
+      {
+        "word": "think",
+        "count": 116
+      }
+    ],
+    "after": [
+      {
+        "word": "'s",
+        "count": 3535
+      },
+      {
+        "word": "was",
+        "count": 493
+      },
+      {
+        "word": "is",
+        "count": 371
+      },
+      {
+        "word": "to",
+        "count": 133
+      },
+      {
+        "word": "out",
+        "count": 131
+      },
+      {
+        "word": "'ll",
+        "count": 107
+      },
+      {
+        "word": "up",
+        "count": 93
+      },
+      {
+        "word": "all",
+        "count": 91
+      },
+      {
+        "word": "in",
+        "count": 85
+      },
+      {
+        "word": "for",
+        "count": 83
+      }
+    ]
+  },
+  "that": {
+    "before": [
+      {
+        "word": "is",
+        "count": 407
+      },
+      {
+        "word": "like",
+        "count": 190
+      },
+      {
+        "word": "know",
+        "count": 189
+      },
+      {
+        "word": "do",
+        "count": 174
+      },
+      {
+        "word": "and",
+        "count": 129
+      },
+      {
+        "word": "about",
+        "count": 114
+      },
+      {
+        "word": "say",
+        "count": 101
+      },
+      {
+        "word": "was",
+        "count": 97
+      },
+      {
+        "word": "well",
+        "count": 96
+      },
+      {
+        "word": "of",
+        "count": 88
+      }
+    ],
+    "after": [
+      {
+        "word": "'s",
+        "count": 1993
+      },
+      {
+        "word": "was",
+        "count": 237
+      },
+      {
+        "word": "is",
+        "count": 204
+      },
+      {
+        "word": "you",
+        "count": 177
+      },
+      {
+        "word": "i",
+        "count": 162
+      },
+      {
+        "word": "a",
+        "count": 52
+      },
+      {
+        "word": "we",
+        "count": 51
+      }
+    ]
+  },
+  "of": {
+    "before": [
+      {
+        "word": "out",
+        "count": 465
+      },
+      {
+        "word": "kind",
+        "count": 231
+      },
+      {
+        "word": "one",
+        "count": 161
+      },
+      {
+        "word": "lot",
+        "count": 145
+      },
+      {
+        "word": "all",
+        "count": 135
+      },
+      {
+        "word": "care",
+        "count": 104
+      },
+      {
+        "word": "part",
+        "count": 75
+      },
+      {
+        "word": "because",
+        "count": 71
+      },
+      {
+        "word": "sort",
+        "count": 69
+      },
+      {
+        "word": "think",
+        "count": 55
+      }
+    ],
+    "after": [
+      {
+        "word": "the",
+        "count": 592
+      },
+      {
+        "word": "course",
+        "count": 249
+      },
+      {
+        "word": "a",
+        "count": 239
+      },
+      {
+        "word": "you",
+        "count": 216
+      },
+      {
+        "word": "my",
+        "count": 180
+      },
+      {
+        "word": "your",
+        "count": 150
+      },
+      {
+        "word": "this",
+        "count": 145
+      },
+      {
+        "word": "here",
+        "count": 121
+      },
+      {
+        "word": "them",
+        "count": 108
+      },
+      {
+        "word": "us",
+        "count": 104
+      }
+    ]
+  },
+  "is": {
+    "before": [
+      {
+        "word": "this",
+        "count": 1050
+      },
+      {
+        "word": "what",
+        "count": 420
+      },
+      {
+        "word": "it",
+        "count": 376
+      },
+      {
+        "word": "he",
+        "count": 211
+      },
+      {
+        "word": "that",
+        "count": 206
+      },
+      {
+        "word": "there",
+        "count": 168
+      },
+      {
+        "word": "she",
+        "count": 114
+      },
+      {
+        "word": "who",
+        "count": 111
+      },
+      {
+        "word": "where",
+        "count": 107
+      },
+      {
+        "word": "name",
+        "count": 100
+      }
+    ],
+    "after": [
+      {
+        "word": "that",
+        "count": 405
+      },
+      {
+        "word": "it",
+        "count": 362
+      },
+      {
+        "word": "a",
+        "count": 354
+      },
+      {
+        "word": "the",
+        "count": 332
+      },
+      {
+        "word": "this",
+        "count": 288
+      },
+      {
+        "word": "not",
+        "count": 180
+      },
+      {
+        "word": "my",
+        "count": 129
+      },
+      {
+        "word": "your",
+        "count": 106
+      },
+      {
+        "word": "he",
+        "count": 106
+      },
+      {
+        "word": "there",
+        "count": 82
+      }
+    ]
+  },
+  "me": {
+    "before": [
+      {
+        "word": "to",
+        "count": 415
+      },
+      {
+        "word": "let",
+        "count": 309
+      },
+      {
+        "word": "with",
+        "count": 265
+      },
+      {
+        "word": "tell",
+        "count": 264
+      },
+      {
+        "word": "give",
+        "count": 243
+      },
+      {
+        "word": "for",
+        "count": 242
+      },
+      {
+        "word": "at",
+        "count": 124
+      },
+      {
+        "word": "excuse",
+        "count": 101
+      },
+      {
+        "word": "help",
+        "count": 98
+      },
+      {
+        "word": "want",
+        "count": 97
+      }
+    ],
+    "after": [
+      {
+        "word": "to",
+        "count": 251
+      },
+      {
+        "word": "a",
+        "count": 141
+      },
+      {
+        "word": "the",
+        "count": 101
+      },
+      {
+        "word": "that",
+        "count": 81
+      },
+      {
+        "word": "in",
+        "count": 74
+      },
+      {
+        "word": "and",
+        "count": 70
+      },
+      {
+        "word": "out",
+        "count": 67
+      },
+      {
+        "word": "what",
+        "count": 64
+      }
+    ]
+  },
+  "in": {
+    "before": [
+      {
+        "word": "you",
+        "count": 112
+      },
+      {
+        "word": "come",
+        "count": 92
+      },
+      {
+        "word": "it",
+        "count": 90
+      },
+      {
+        "word": "me",
+        "count": 73
+      },
+      {
+        "word": "i'm",
+        "count": 67
+      },
+      {
+        "word": "be",
+        "count": 65
+      },
+      {
+        "word": "get",
+        "count": 64
+      },
+      {
+        "word": "was",
+        "count": 63
+      },
+      {
+        "word": "back",
+        "count": 60
+      },
+      {
+        "word": "is",
+        "count": 54
+      }
+    ],
+    "after": [
+      {
+        "word": "the",
+        "count": 1051
+      },
+      {
+        "word": "a",
+        "count": 272
+      },
+      {
+        "word": "my",
+        "count": 217
+      },
+      {
+        "word": "this",
+        "count": 144
+      },
+      {
+        "word": "your",
+        "count": 143
+      },
+      {
+        "word": "here",
+        "count": 116
+      },
+      {
+        "word": "there",
+        "count": 99
+      },
+      {
+        "word": "love",
+        "count": 85
+      },
+      {
+        "word": "that",
+        "count": 54
+      },
+      {
+        "word": "it",
+        "count": 52
+      }
+    ]
+  },
+  "what": {
+    "before": [
+      {
+        "word": "know",
+        "count": 461
+      },
+      {
+        "word": "that's",
+        "count": 175
+      },
+      {
+        "word": "so",
+        "count": 126
+      },
+      {
+        "word": "me",
+        "count": 71
+      },
+      {
+        "word": "and",
+        "count": 71
+      },
+      {
+        "word": "is",
+        "count": 64
+      },
+      {
+        "word": "but",
+        "count": 53
+      }
+    ],
+    "after": [
+      {
+        "word": "'s",
+        "count": 789
+      },
+      {
+        "word": "are",
+        "count": 504
+      },
+      {
+        "word": "is",
+        "count": 420
+      },
+      {
+        "word": "do",
+        "count": 410
+      },
+      {
+        "word": "you",
+        "count": 247
+      },
+      {
+        "word": "i",
+        "count": 222
+      },
+      {
+        "word": "the",
+        "count": 211
+      },
+      {
+        "word": "happened",
+        "count": 207
+      },
+      {
+        "word": "did",
+        "count": 152
+      },
+      {
+        "word": "about",
+        "count": 149
+      }
+    ]
+  },
+  "this": {
+    "before": [
+      {
+        "word": "is",
+        "count": 284
+      },
+      {
+        "word": "do",
+        "count": 176
+      },
+      {
+        "word": "of",
+        "count": 146
+      },
+      {
+        "word": "in",
+        "count": 140
+      },
+      {
+        "word": "like",
+        "count": 132
+      },
+      {
+        "word": "all",
+        "count": 86
+      },
+      {
+        "word": "about",
+        "count": 83
+      },
+      {
+        "word": "with",
+        "count": 78
+      },
+      {
+        "word": "for",
+        "count": 74
+      },
+      {
+        "word": "at",
+        "count": 72
+      }
+    ],
+    "after": [
+      {
+        "word": "is",
+        "count": 1050
+      },
+      {
+        "word": "place",
+        "count": 74
+      },
+      {
+        "word": "time",
+        "count": 72
+      },
+      {
+        "word": "one",
+        "count": 71
+      },
+      {
+        "word": "isn't",
+        "count": 65
+      },
+      {
+        "word": "guy",
+        "count": 64
+      },
+      {
+        "word": "way",
+        "count": 56
+      },
+      {
+        "word": "thing",
+        "count": 52
+      }
+    ]
+  },
+  "no": {
+    "before": [
+      {
+        "word": "there's",
+        "count": 100
+      },
+      {
+        "word": "oh",
+        "count": 100
+      },
+      {
+        "word": "have",
+        "count": 80
+      },
+      {
+        "word": "is",
+        "count": 65
+      }
+    ],
+    "after": [
+      {
+        "word": "no",
+        "count": 299
+      },
+      {
+        "word": "i",
+        "count": 184
+      },
+      {
+        "word": "one",
+        "count": 140
+      },
+      {
+        "word": "it's",
+        "count": 111
+      },
+      {
+        "word": "i'm",
+        "count": 81
+      },
+      {
+        "word": "you",
+        "count": 81
+      },
+      {
+        "word": "more",
+        "count": 68
+      }
+    ]
+  },
+  "on": {
+    "before": [
+      {
+        "word": "come",
+        "count": 734
+      },
+      {
+        "word": "going",
+        "count": 148
+      },
+      {
+        "word": "go",
+        "count": 76
+      },
+      {
+        "word": "hold",
+        "count": 61
+      }
+    ],
+    "after": [
+      {
+        "word": "the",
+        "count": 533
+      },
+      {
+        "word": "a",
+        "count": 140
+      },
+      {
+        "word": "your",
+        "count": 112
+      },
+      {
+        "word": "my",
+        "count": 90
+      },
+      {
+        "word": "it",
+        "count": 77
+      },
+      {
+        "word": "you",
+        "count": 74
+      },
+      {
+        "word": "me",
+        "count": 70
+      },
+      {
+        "word": "this",
+        "count": 60
+      },
+      {
+        "word": "come",
+        "count": 60
+      },
+      {
+        "word": "that",
+        "count": 51
+      }
+    ]
+  },
+  "my": {
+    "before": [
+      {
+        "word": "oh",
+        "count": 293
+      },
+      {
+        "word": "in",
+        "count": 213
+      },
+      {
+        "word": "of",
+        "count": 182
+      },
+      {
+        "word": "is",
+        "count": 126
+      },
+      {
+        "word": "to",
+        "count": 117
+      },
+      {
+        "word": "on",
+        "count": 85
+      },
+      {
+        "word": "with",
+        "count": 75
+      },
+      {
+        "word": "are",
+        "count": 73
+      },
+      {
+        "word": "for",
+        "count": 70
+      },
+      {
+        "word": "it's",
+        "count": 65
+      }
+    ],
+    "after": [
+      {
+        "word": "god",
+        "count": 228
+      },
+      {
+        "word": "life",
+        "count": 118
+      },
+      {
+        "word": "friend",
+        "count": 73
+      },
+      {
+        "word": "name",
+        "count": 69
+      },
+      {
+        "word": "heart",
+        "count": 67
+      },
+      {
+        "word": "own",
+        "count": 60
+      },
+      {
+        "word": "love",
+        "count": 55
+      }
+    ]
+  },
+  "we": {
+    "before": [
+      {
+        "word": "are",
+        "count": 129
+      },
+      {
+        "word": "and",
+        "count": 117
+      },
+      {
+        "word": "if",
+        "count": 98
+      },
+      {
+        "word": "think",
+        "count": 89
+      },
+      {
+        "word": "here",
+        "count": 88
+      },
+      {
+        "word": "do",
+        "count": 86
+      },
+      {
+        "word": "what",
+        "count": 82
+      },
+      {
+        "word": "can",
+        "count": 75
+      },
+      {
+        "word": "that",
+        "count": 68
+      },
+      {
+        "word": "but",
+        "count": 66
+      }
+    ],
+    "after": [
+      {
+        "word": "'re",
+        "count": 937
+      },
+      {
+        "word": "'ll",
+        "count": 308
+      },
+      {
+        "word": "have",
+        "count": 287
+      },
+      {
+        "word": "'ve",
+        "count": 180
+      },
+      {
+        "word": "are",
+        "count": 160
+      },
+      {
+        "word": "got",
+        "count": 155
+      },
+      {
+        "word": "can",
+        "count": 152
+      },
+      {
+        "word": "need",
+        "count": 131
+      },
+      {
+        "word": "don't",
+        "count": 131
+      },
+      {
+        "word": "go",
+        "count": 121
+      }
+    ]
+  },
+  "i'm": {
+    "before": [
+      {
+        "word": "no",
+        "count": 91
+      },
+      {
+        "word": "and",
+        "count": 86
+      },
+      {
+        "word": "what",
+        "count": 74
+      },
+      {
+        "word": "but",
+        "count": 66
+      }
+    ],
+    "after": [
+      {
+        "word": "not",
+        "count": 452
+      },
+      {
+        "word": "gonna",
+        "count": 269
+      },
+      {
+        "word": "sorry",
+        "count": 233
+      },
+      {
+        "word": "a",
+        "count": 166
+      },
+      {
+        "word": "going",
+        "count": 148
+      },
+      {
+        "word": "just",
+        "count": 139
+      },
+      {
+        "word": "so",
+        "count": 124
+      },
+      {
+        "word": "sure",
+        "count": 75
+      },
+      {
+        "word": "in",
+        "count": 67
+      },
+      {
+        "word": "here",
+        "count": 61
+      }
+    ]
+  },
+  "your": {
+    "before": [
+      {
+        "word": "of",
+        "count": 148
+      },
+      {
+        "word": "in",
+        "count": 142
+      },
+      {
+        "word": "on",
+        "count": 113
+      },
+      {
+        "word": "to",
+        "count": 111
+      },
+      {
+        "word": "is",
+        "count": 106
+      },
+      {
+        "word": "what's",
+        "count": 91
+      },
+      {
+        "word": "with",
+        "count": 86
+      },
+      {
+        "word": "for",
+        "count": 80
+      },
+      {
+        "word": "get",
+        "count": 67
+      },
+      {
+        "word": "about",
+        "count": 58
+      }
+    ],
+    "after": [
+      {
+        "word": "name",
+        "count": 84
+      },
+      {
+        "word": "own",
+        "count": 63
+      },
+      {
+        "word": "head",
+        "count": 55
+      },
+      {
+        "word": "father",
+        "count": 54
+      },
+      {
+        "word": "mind",
+        "count": 51
+      },
+      {
+        "word": "life",
+        "count": 50
+      }
+    ]
+  },
+  "for": {
+    "before": [
+      {
+        "word": "you",
+        "count": 120
+      },
+      {
+        "word": "looking",
+        "count": 111
+      },
+      {
+        "word": "it",
+        "count": 84
+      },
+      {
+        "word": "thanks",
+        "count": 79
+      },
+      {
+        "word": "time",
+        "count": 69
+      },
+      {
+        "word": "waiting",
+        "count": 58
+      },
+      {
+        "word": "here",
+        "count": 57
+      }
+    ],
+    "after": [
+      {
+        "word": "you",
+        "count": 396
+      },
+      {
+        "word": "the",
+        "count": 378
+      },
+      {
+        "word": "a",
+        "count": 349
+      },
+      {
+        "word": "me",
+        "count": 240
+      },
+      {
+        "word": "it",
+        "count": 82
+      },
+      {
+        "word": "that",
+        "count": 80
+      },
+      {
+        "word": "your",
+        "count": 80
+      },
+      {
+        "word": "this",
+        "count": 74
+      },
+      {
+        "word": "my",
+        "count": 73
+      },
+      {
+        "word": "us",
+        "count": 60
+      }
+    ]
+  },
+  "it's": {
+    "before": [
+      {
+        "word": "no",
+        "count": 122
+      },
+      {
+        "word": "but",
+        "count": 76
+      },
+      {
+        "word": "think",
+        "count": 73
+      },
+      {
+        "word": "and",
+        "count": 67
+      },
+      {
+        "word": "oh",
+        "count": 53
+      }
+    ],
+    "after": [
+      {
+        "word": "a",
+        "count": 414
+      },
+      {
+        "word": "not",
+        "count": 398
+      },
+      {
+        "word": "just",
+        "count": 169
+      },
+      {
+        "word": "all",
+        "count": 153
+      },
+      {
+        "word": "the",
+        "count": 143
+      },
+      {
+        "word": "like",
+        "count": 84
+      },
+      {
+        "word": "been",
+        "count": 69
+      },
+      {
+        "word": "my",
+        "count": 66
+      },
+      {
+        "word": "okay",
+        "count": 65
+      },
+      {
+        "word": "too",
+        "count": 58
+      }
+    ]
+  },
+  "do": {
+    "before": [
+      {
+        "word": "what",
+        "count": 410
+      },
+      {
+        "word": "to",
+        "count": 375
+      },
+      {
+        "word": "i",
+        "count": 237
+      },
+      {
+        "word": "you",
+        "count": 212
+      },
+      {
+        "word": "how",
+        "count": 164
+      },
+      {
+        "word": "can",
+        "count": 113
+      },
+      {
+        "word": "gonna",
+        "count": 94
+      },
+      {
+        "word": "don't",
+        "count": 85
+      },
+      {
+        "word": "we",
+        "count": 83
+      },
+      {
+        "word": "why",
+        "count": 81
+      }
+    ],
+    "after": [
+      {
+        "word": "you",
+        "count": 1313
+      },
+      {
+        "word": "it",
+        "count": 320
+      },
+      {
+        "word": "this",
+        "count": 173
+      },
+      {
+        "word": "that",
+        "count": 165
+      },
+      {
+        "word": "i",
+        "count": 138
+      },
+      {
+        "word": "not",
+        "count": 132
+      },
+      {
+        "word": "we",
+        "count": 86
+      },
+      {
+        "word": "with",
+        "count": 58
+      },
+      {
+        "word": "the",
+        "count": 56
+      }
+    ]
+  },
+  "have": {
+    "before": [
+      {
+        "word": "i",
+        "count": 669
+      },
+      {
+        "word": "you",
+        "count": 542
+      },
+      {
+        "word": "we",
+        "count": 294
+      },
+      {
+        "word": "don't",
+        "count": 213
+      },
+      {
+        "word": "to",
+        "count": 131
+      },
+      {
+        "word": "gonna",
+        "count": 65
+      },
+      {
+        "word": "would",
+        "count": 58
+      },
+      {
+        "word": "should",
+        "count": 57
+      },
+      {
+        "word": "could",
+        "count": 51
+      }
+    ],
+    "after": [
+      {
+        "word": "to",
+        "count": 638
+      },
+      {
+        "word": "a",
+        "count": 543
+      },
+      {
+        "word": "you",
+        "count": 290
+      },
+      {
+        "word": "the",
+        "count": 124
+      },
+      {
+        "word": "been",
+        "count": 92
+      },
+      {
+        "word": "no",
+        "count": 80
+      },
+      {
+        "word": "any",
+        "count": 68
+      },
+      {
+        "word": "some",
+        "count": 58
+      },
+      {
+        "word": "it",
+        "count": 51
+      }
+    ]
+  },
+  "don't": {
+    "before": [
+      {
+        "word": "i",
+        "count": 1271
+      },
+      {
+        "word": "you",
+        "count": 447
+      },
+      {
+        "word": "we",
+        "count": 132
+      },
+      {
+        "word": "why",
+        "count": 110
+      },
+      {
+        "word": "please",
+        "count": 67
+      }
+    ],
+    "after": [
+      {
+        "word": "know",
+        "count": 574
+      },
+      {
+        "word": "you",
+        "count": 265
+      },
+      {
+        "word": "have",
+        "count": 211
+      },
+      {
+        "word": "want",
+        "count": 193
+      },
+      {
+        "word": "worry",
+        "count": 149
+      },
+      {
+        "word": "think",
+        "count": 129
+      },
+      {
+        "word": "do",
+        "count": 86
+      },
+      {
+        "word": "be",
+        "count": 73
+      },
+      {
+        "word": "need",
+        "count": 69
+      },
+      {
+        "word": "care",
+        "count": 68
+      }
+    ]
+  },
+  "all": {
+    "before": [
+      {
+        "word": "it's",
+        "count": 153
+      },
+      {
+        "word": "you",
+        "count": 136
+      },
+      {
+        "word": "that's",
+        "count": 100
+      },
+      {
+        "word": "it",
+        "count": 95
+      },
+      {
+        "word": "at",
+        "count": 90
+      },
+      {
+        "word": "is",
+        "count": 59
+      },
+      {
+        "word": "we",
+        "count": 57
+      },
+      {
+        "word": "of",
+        "count": 54
+      }
+    ],
+    "after": [
+      {
+        "word": "right",
+        "count": 787
+      },
+      {
+        "word": "the",
+        "count": 276
+      },
+      {
+        "word": "of",
+        "count": 139
+      },
+      {
+        "word": "this",
+        "count": 85
+      },
+      {
+        "word": "i",
+        "count": 71
+      },
+      {
+        "word": "that",
+        "count": 63
+      }
+    ]
+  },
+  "are": {
+    "before": [
+      {
+        "word": "you",
+        "count": 630
+      },
+      {
+        "word": "what",
+        "count": 505
+      },
+      {
+        "word": "where",
+        "count": 188
+      },
+      {
+        "word": "we",
+        "count": 165
+      },
+      {
+        "word": "how",
+        "count": 144
+      },
+      {
+        "word": "why",
+        "count": 128
+      },
+      {
+        "word": "who",
+        "count": 105
+      },
+      {
+        "word": "there",
+        "count": 99
+      },
+      {
+        "word": "they",
+        "count": 71
+      },
+      {
+        "word": "these",
+        "count": 55
+      }
+    ],
+    "after": [
+      {
+        "word": "you",
+        "count": 1688
+      },
+      {
+        "word": "we",
+        "count": 131
+      },
+      {
+        "word": "the",
+        "count": 99
+      },
+      {
+        "word": "my",
+        "count": 73
+      },
+      {
+        "word": "a",
+        "count": 67
+      },
+      {
+        "word": "not",
+        "count": 62
+      },
+      {
+        "word": "they",
+        "count": 53
+      }
+    ]
+  },
+  "be": {
+    "before": [
+      {
+        "word": "to",
+        "count": 696
+      },
+      {
+        "word": "gonna",
+        "count": 177
+      },
+      {
+        "word": "will",
+        "count": 168
+      },
+      {
+        "word": "i'll",
+        "count": 154
+      },
+      {
+        "word": "should",
+        "count": 110
+      },
+      {
+        "word": "must",
+        "count": 103
+      },
+      {
+        "word": "would",
+        "count": 99
+      },
+      {
+        "word": "could",
+        "count": 98
+      },
+      {
+        "word": "can",
+        "count": 79
+      },
+      {
+        "word": "don't",
+        "count": 73
+      }
+    ],
+    "after": [
+      {
+        "word": "a",
+        "count": 254
+      },
+      {
+        "word": "the",
+        "count": 95
+      },
+      {
+        "word": "in",
+        "count": 65
+      },
+      {
+        "word": "here",
+        "count": 56
+      },
+      {
+        "word": "careful",
+        "count": 52
+      },
+      {
+        "word": "right",
+        "count": 52
+      },
+      {
+        "word": "fine",
+        "count": 50
+      }
+    ]
+  },
+  "not": {
+    "before": [
+      {
+        "word": "i'm",
+        "count": 460
+      },
+      {
+        "word": "it's",
+        "count": 401
+      },
+      {
+        "word": "you're",
+        "count": 245
+      },
+      {
+        "word": "is",
+        "count": 183
+      },
+      {
+        "word": "that's",
+        "count": 160
+      },
+      {
+        "word": "do",
+        "count": 132
+      },
+      {
+        "word": "we're",
+        "count": 100
+      },
+      {
+        "word": "he's",
+        "count": 95
+      },
+      {
+        "word": "are",
+        "count": 62
+      },
+      {
+        "word": "will",
+        "count": 52
+      }
+    ],
+    "after": [
+      {
+        "word": "a",
+        "count": 227
+      },
+      {
+        "word": "gonna",
+        "count": 116
+      },
+      {
+        "word": "the",
+        "count": 106
+      },
+      {
+        "word": "to",
+        "count": 76
+      },
+      {
+        "word": "going",
+        "count": 57
+      },
+      {
+        "word": "that",
+        "count": 55
+      },
+      {
+        "word": "even",
+        "count": 53
+      },
+      {
+        "word": "in",
+        "count": 52
+      },
+      {
+        "word": "for",
+        "count": 51
+      }
+    ]
+  },
+  "know": {
+    "before": [
+      {
+        "word": "you",
+        "count": 1195
+      },
+      {
+        "word": "i",
+        "count": 576
+      },
+      {
+        "word": "don't",
+        "count": 573
+      },
+      {
+        "word": "to",
+        "count": 109
+      },
+      {
+        "word": "didn't",
+        "count": 64
+      }
+    ],
+    "after": [
+      {
+        "word": "what",
+        "count": 430
+      },
+      {
+        "word": "that",
+        "count": 182
+      },
+      {
+        "word": "how",
+        "count": 145
+      },
+      {
+        "word": "i",
+        "count": 120
+      },
+      {
+        "word": "you",
+        "count": 96
+      },
+      {
+        "word": "where",
+        "count": 86
+      },
+      {
+        "word": "the",
+        "count": 75
+      },
+      {
+        "word": "why",
+        "count": 57
+      },
+      {
+        "word": "who",
+        "count": 54
+      },
+      {
+        "word": "it's",
+        "count": 50
+      }
+    ]
+  },
+  "just": {
+    "before": [
+      {
+        "word": "i",
+        "count": 374
+      },
+      {
+        "word": "you",
+        "count": 192
+      },
+      {
+        "word": "it's",
+        "count": 172
+      },
+      {
+        "word": "i'm",
+        "count": 140
+      },
+      {
+        "word": "was",
+        "count": 97
+      },
+      {
+        "word": "we",
+        "count": 87
+      }
+    ],
+    "after": [
+      {
+        "word": "a",
+        "count": 165
+      },
+      {
+        "word": "like",
+        "count": 86
+      },
+      {
+        "word": "got",
+        "count": 62
+      },
+      {
+        "word": "want",
+        "count": 56
+      },
+      {
+        "word": "gonna",
+        "count": 50
+      }
+    ]
+  },
+  "oh": {
+    "before": [],
+    "after": [
+      {
+        "word": "my",
+        "count": 295
+      },
+      {
+        "word": "i",
+        "count": 115
+      },
+      {
+        "word": "no",
+        "count": 101
+      },
+      {
+        "word": "you",
+        "count": 65
+      },
+      {
+        "word": "it's",
+        "count": 53
+      }
+    ]
+  },
+  "was": {
+    "before": [
+      {
+        "word": "i",
+        "count": 675
+      },
+      {
+        "word": "it",
+        "count": 494
+      },
+      {
+        "word": "that",
+        "count": 239
+      },
+      {
+        "word": "he",
+        "count": 231
+      },
+      {
+        "word": "she",
+        "count": 119
+      },
+      {
+        "word": "what",
+        "count": 89
+      },
+      {
+        "word": "there",
+        "count": 83
+      }
+    ],
+    "after": [
+      {
+        "word": "a",
+        "count": 280
+      },
+      {
+        "word": "the",
+        "count": 131
+      },
+      {
+        "word": "just",
+        "count": 97
+      },
+      {
+        "word": "that",
+        "count": 97
+      },
+      {
+        "word": "in",
+        "count": 62
+      },
+      {
+        "word": "it",
+        "count": 58
+      }
+    ]
+  },
+  "with": {
+    "before": [
+      {
+        "word": "up",
+        "count": 80
+      },
+      {
+        "word": "do",
+        "count": 65
+      },
+      {
+        "word": "wrong",
+        "count": 61
+      },
+      {
+        "word": "come",
+        "count": 51
+      },
+      {
+        "word": "love",
+        "count": 50
+      }
+    ],
+    "after": [
+      {
+        "word": "you",
+        "count": 308
+      },
+      {
+        "word": "me",
+        "count": 265
+      },
+      {
+        "word": "the",
+        "count": 264
+      },
+      {
+        "word": "a",
+        "count": 146
+      },
+      {
+        "word": "him",
+        "count": 89
+      },
+      {
+        "word": "your",
+        "count": 88
+      },
+      {
+        "word": "this",
+        "count": 78
+      },
+      {
+        "word": "my",
+        "count": 77
+      },
+      {
+        "word": "it",
+        "count": 73
+      },
+      {
+        "word": "her",
+        "count": 72
+      }
+    ]
+  },
+  "get": {
+    "before": [
+      {
+        "word": "to",
+        "count": 345
+      },
+      {
+        "word": "you",
+        "count": 214
+      },
+      {
+        "word": "i",
+        "count": 129
+      },
+      {
+        "word": "let's",
+        "count": 102
+      },
+      {
+        "word": "gonna",
+        "count": 97
+      },
+      {
+        "word": "and",
+        "count": 64
+      },
+      {
+        "word": "don't",
+        "count": 62
+      },
+      {
+        "word": "we",
+        "count": 62
+      },
+      {
+        "word": "i'll",
+        "count": 57
+      },
+      {
+        "word": "go",
+        "count": 57
+      }
+    ],
+    "after": [
+      {
+        "word": "out",
+        "count": 188
+      },
+      {
+        "word": "the",
+        "count": 139
+      },
+      {
+        "word": "it",
+        "count": 136
+      },
+      {
+        "word": "a",
+        "count": 128
+      },
+      {
+        "word": "you",
+        "count": 111
+      },
+      {
+        "word": "to",
+        "count": 85
+      },
+      {
+        "word": "back",
+        "count": 77
+      },
+      {
+        "word": "your",
+        "count": 67
+      },
+      {
+        "word": "up",
+        "count": 65
+      },
+      {
+        "word": "in",
+        "count": 64
+      }
+    ]
+  },
+  "so": {
+    "before": [
+      {
+        "word": "i'm",
+        "count": 124
+      },
+      {
+        "word": "you",
+        "count": 91
+      },
+      {
+        "word": "is",
+        "count": 67
+      },
+      {
+        "word": "think",
+        "count": 59
+      }
+    ],
+    "after": [
+      {
+        "word": "much",
+        "count": 184
+      },
+      {
+        "word": "i",
+        "count": 140
+      },
+      {
+        "word": "you",
+        "count": 98
+      },
+      {
+        "word": "sorry",
+        "count": 95
+      },
+      {
+        "word": "what",
+        "count": 94
+      },
+      {
+        "word": "many",
+        "count": 51
+      }
+    ]
+  },
+  "like": {
+    "before": [
+      {
+        "word": "you",
+        "count": 176
+      },
+      {
+        "word": "i",
+        "count": 126
+      },
+      {
+        "word": "looks",
+        "count": 103
+      },
+      {
+        "word": "just",
+        "count": 86
+      },
+      {
+        "word": "it's",
+        "count": 86
+      },
+      {
+        "word": "look",
+        "count": 68
+      },
+      {
+        "word": "i'd",
+        "count": 55
+      },
+      {
+        "word": "feel",
+        "count": 52
+      }
+    ],
+    "after": [
+      {
+        "word": "a",
+        "count": 292
+      },
+      {
+        "word": "that",
+        "count": 185
+      },
+      {
+        "word": "to",
+        "count": 143
+      },
+      {
+        "word": "you",
+        "count": 135
+      },
+      {
+        "word": "this",
+        "count": 133
+      },
+      {
+        "word": "the",
+        "count": 110
+      },
+      {
+        "word": "it",
+        "count": 109
+      },
+      {
+        "word": "i",
+        "count": 66
+      }
+    ]
+  },
+  "right": {
+    "before": [
+      {
+        "word": "all",
+        "count": 787
+      },
+      {
+        "word": "that's",
+        "count": 120
+      },
+      {
+        "word": "the",
+        "count": 80
+      },
+      {
+        "word": "you're",
+        "count": 61
+      },
+      {
+        "word": "be",
+        "count": 51
+      }
+    ],
+    "after": [
+      {
+        "word": "now",
+        "count": 195
+      },
+      {
+        "word": "here",
+        "count": 103
+      },
+      {
+        "word": "there",
+        "count": 71
+      }
+    ]
+  },
+  "here": {
+    "before": [
+      {
+        "word": "of",
+        "count": 122
+      },
+      {
+        "word": "in",
+        "count": 116
+      },
+      {
+        "word": "right",
+        "count": 108
+      },
+      {
+        "word": "come",
+        "count": 104
+      },
+      {
+        "word": "over",
+        "count": 72
+      },
+      {
+        "word": "doing",
+        "count": 72
+      },
+      {
+        "word": "i'm",
+        "count": 62
+      },
+      {
+        "word": "out",
+        "count": 62
+      },
+      {
+        "word": "be",
+        "count": 57
+      },
+      {
+        "word": "up",
+        "count": 53
+      }
+    ],
+    "after": [
+      {
+        "word": "'s",
+        "count": 108
+      },
+      {
+        "word": "to",
+        "count": 101
+      },
+      {
+        "word": "we",
+        "count": 87
+      },
+      {
+        "word": "you",
+        "count": 85
+      },
+      {
+        "word": "for",
+        "count": 58
+      }
+    ]
+  },
+  "but": {
+    "before": [],
+    "after": [
+      {
+        "word": "i",
+        "count": 332
+      },
+      {
+        "word": "you",
+        "count": 181
+      },
+      {
+        "word": "it's",
+        "count": 79
+      },
+      {
+        "word": "i'm",
+        "count": 69
+      },
+      {
+        "word": "the",
+        "count": 67
+      },
+      {
+        "word": "he",
+        "count": 50
+      },
+      {
+        "word": "it",
+        "count": 50
+      }
+    ]
+  },
+  "go": {
+    "before": [
+      {
+        "word": "to",
+        "count": 319
+      },
+      {
+        "word": "you",
+        "count": 207
+      },
+      {
+        "word": "let's",
+        "count": 190
+      },
+      {
+        "word": "we",
+        "count": 122
+      },
+      {
+        "word": "gotta",
+        "count": 66
+      },
+      {
+        "word": "i",
+        "count": 55
+      },
+      {
+        "word": "gonna",
+        "count": 55
+      }
+    ],
+    "after": [
+      {
+        "word": "to",
+        "count": 200
+      },
+      {
+        "word": "back",
+        "count": 87
+      },
+      {
+        "word": "on",
+        "count": 76
+      },
+      {
+        "word": "home",
+        "count": 62
+      },
+      {
+        "word": "and",
+        "count": 60
+      },
+      {
+        "word": "get",
+        "count": 57
+      }
+    ]
+  },
+  "he": {
+    "before": [
+      {
+        "word": "and",
+        "count": 127
+      },
+      {
+        "word": "is",
+        "count": 107
+      },
+      {
+        "word": "if",
+        "count": 85
+      },
+      {
+        "word": "but",
+        "count": 71
+      },
+      {
+        "word": "did",
+        "count": 66
+      },
+      {
+        "word": "think",
+        "count": 61
+      },
+      {
+        "word": "what",
+        "count": 51
+      }
+    ],
+    "after": [
+      {
+        "word": "'s",
+        "count": 1125
+      },
+      {
+        "word": "was",
+        "count": 228
+      },
+      {
+        "word": "is",
+        "count": 207
+      },
+      {
+        "word": "'ll",
+        "count": 84
+      },
+      {
+        "word": "has",
+        "count": 75
+      },
+      {
+        "word": "doesn't",
+        "count": 68
+      },
+      {
+        "word": "said",
+        "count": 58
+      }
+    ]
+  },
+  "yeah": {
+    "before": [
+      {
+        "word": "oh",
+        "count": 51
+      }
+    ],
+    "after": [
+      {
+        "word": "i",
+        "count": 175
+      },
+      {
+        "word": "yeah",
+        "count": 88
+      },
+      {
+        "word": "well",
+        "count": 56
+      }
+    ]
+  },
+  "you're": {
+    "before": [
+      {
+        "word": "think",
+        "count": 76
+      },
+      {
+        "word": "what",
+        "count": 71
+      },
+      {
+        "word": "if",
+        "count": 57
+      },
+      {
+        "word": "and",
+        "count": 51
+      }
+    ],
+    "after": [
+      {
+        "word": "not",
+        "count": 242
+      },
+      {
+        "word": "a",
+        "count": 166
+      },
+      {
+        "word": "gonna",
+        "count": 156
+      },
+      {
+        "word": "the",
+        "count": 93
+      },
+      {
+        "word": "going",
+        "count": 65
+      },
+      {
+        "word": "right",
+        "count": 62
+      }
+    ]
+  },
+  "up": {
+    "before": [
+      {
+        "word": "it",
+        "count": 98
+      },
+      {
+        "word": "get",
+        "count": 65
+      },
+      {
+        "word": "you",
+        "count": 58
+      }
+    ],
+    "after": [
+      {
+        "word": "to",
+        "count": 98
+      },
+      {
+        "word": "with",
+        "count": 80
+      },
+      {
+        "word": "the",
+        "count": 77
+      },
+      {
+        "word": "there",
+        "count": 59
+      },
+      {
+        "word": "here",
+        "count": 53
+      }
+    ]
+  },
+  "come": {
+    "before": [
+      {
+        "word": "to",
+        "count": 131
+      },
+      {
+        "word": "you",
+        "count": 90
+      }
+    ],
+    "after": [
+      {
+        "word": "on",
+        "count": 734
+      },
+      {
+        "word": "here",
+        "count": 104
+      },
+      {
+        "word": "to",
+        "count": 99
+      },
+      {
+        "word": "in",
+        "count": 92
+      },
+      {
+        "word": "back",
+        "count": 79
+      },
+      {
+        "word": "with",
+        "count": 51
+      }
+    ]
+  },
+  "out": {
+    "before": [
+      {
+        "word": "get",
+        "count": 190
+      },
+      {
+        "word": "it",
+        "count": 138
+      },
+      {
+        "word": "me",
+        "count": 67
+      },
+      {
+        "word": "you",
+        "count": 60
+      }
+    ],
+    "after": [
+      {
+        "word": "of",
+        "count": 467
+      },
+      {
+        "word": "there",
+        "count": 116
+      },
+      {
+        "word": "here",
+        "count": 62
+      }
+    ]
+  },
+  "can": {
+    "before": [
+      {
+        "word": "i",
+        "count": 867
+      },
+      {
+        "word": "you",
+        "count": 615
+      },
+      {
+        "word": "we",
+        "count": 232
+      },
+      {
+        "word": "how",
+        "count": 75
+      },
+      {
+        "word": "he",
+        "count": 66
+      }
+    ],
+    "after": [
+      {
+        "word": "'t",
+        "count": 944
+      },
+      {
+        "word": "you",
+        "count": 267
+      },
+      {
+        "word": "i",
+        "count": 216
+      },
+      {
+        "word": "do",
+        "count": 115
+      },
+      {
+        "word": "be",
+        "count": 83
+      },
+      {
+        "word": "see",
+        "count": 77
+      },
+      {
+        "word": "we",
+        "count": 75
+      }
+    ]
+  },
+  "now": {
+    "before": [
+      {
+        "word": "right",
+        "count": 197
+      },
+      {
+        "word": "and",
+        "count": 62
+      }
+    ],
+    "after": [
+      {
+        "word": "i",
+        "count": 85
+      },
+      {
+        "word": "you",
+        "count": 64
+      }
+    ]
+  },
+  "that's": {
+    "before": [
+      {
+        "word": "well",
+        "count": 62
+      },
+      {
+        "word": "and",
+        "count": 61
+      }
+    ],
+    "after": [
+      {
+        "word": "a",
+        "count": 177
+      },
+      {
+        "word": "what",
+        "count": 171
+      },
+      {
+        "word": "not",
+        "count": 160
+      },
+      {
+        "word": "the",
+        "count": 132
+      },
+      {
+        "word": "right",
+        "count": 120
+      },
+      {
+        "word": "all",
+        "count": 99
+      },
+      {
+        "word": "why",
+        "count": 95
+      },
+      {
+        "word": "my",
+        "count": 65
+      },
+      {
+        "word": "it",
+        "count": 55
+      }
+    ]
+  },
+  "one": {
+    "before": [
+      {
+        "word": "no",
+        "count": 163
+      },
+      {
+        "word": "the",
+        "count": 136
+      },
+      {
+        "word": "this",
+        "count": 78
+      },
+      {
+        "word": "that",
+        "count": 50
+      }
+    ],
+    "after": [
+      {
+        "word": "of",
+        "count": 166
+      },
+      {
+        "word": "thing",
+        "count": 57
+      },
+      {
+        "word": "more",
+        "count": 54
+      }
+    ]
+  },
+  "there": {
+    "before": [
+      {
+        "word": "out",
+        "count": 101
+      },
+      {
+        "word": "in",
+        "count": 95
+      },
+      {
+        "word": "is",
+        "count": 81
+      },
+      {
+        "word": "right",
+        "count": 73
+      },
+      {
+        "word": "over",
+        "count": 62
+      },
+      {
+        "word": "up",
+        "count": 59
+      },
+      {
+        "word": "and",
+        "count": 52
+      }
+    ],
+    "after": [
+      {
+        "word": "'s",
+        "count": 610
+      },
+      {
+        "word": "is",
+        "count": 172
+      },
+      {
+        "word": "you",
+        "count": 112
+      },
+      {
+        "word": "are",
+        "count": 99
+      },
+      {
+        "word": "was",
+        "count": 87
+      }
+    ]
+  },
+  "if": {
+    "before": [
+      {
+        "word": "what",
+        "count": 84
+      }
+    ],
+    "after": [
+      {
+        "word": "you",
+        "count": 447
+      },
+      {
+        "word": "i",
+        "count": 257
+      },
+      {
+        "word": "we",
+        "count": 98
+      },
+      {
+        "word": "he",
+        "count": 73
+      },
+      {
+        "word": "you're",
+        "count": 57
+      },
+      {
+        "word": "it",
+        "count": 56
+      }
+    ]
+  },
+  "about": {
+    "before": [
+      {
+        "word": "talking",
+        "count": 158
+      },
+      {
+        "word": "what",
+        "count": 149
+      },
+      {
+        "word": "how",
+        "count": 77
+      },
+      {
+        "word": "think",
+        "count": 71
+      },
+      {
+        "word": "talk",
+        "count": 71
+      },
+      {
+        "word": "worry",
+        "count": 65
+      }
+    ],
+    "after": [
+      {
+        "word": "it",
+        "count": 188
+      },
+      {
+        "word": "the",
+        "count": 142
+      },
+      {
+        "word": "you",
+        "count": 127
+      },
+      {
+        "word": "that",
+        "count": 114
+      },
+      {
+        "word": "this",
+        "count": 83
+      },
+      {
+        "word": "to",
+        "count": 76
+      },
+      {
+        "word": "me",
+        "count": 75
+      },
+      {
+        "word": "your",
+        "count": 59
+      }
+    ]
+  },
+  "got": {
+    "before": [
+      {
+        "word": "you",
+        "count": 313
+      },
+      {
+        "word": "i",
+        "count": 305
+      },
+      {
+        "word": "we",
+        "count": 159
+      },
+      {
+        "word": "i've",
+        "count": 107
+      },
+      {
+        "word": "just",
+        "count": 62
+      },
+      {
+        "word": "you've",
+        "count": 62
+      },
+      {
+        "word": "he's",
+        "count": 51
+      },
+      {
+        "word": "we've",
+        "count": 50
+      }
+    ],
+    "after": [
+      {
+        "word": "a",
+        "count": 263
+      },
+      {
+        "word": "to",
+        "count": 184
+      },
+      {
+        "word": "it",
+        "count": 97
+      },
+      {
+        "word": "the",
+        "count": 76
+      },
+      {
+        "word": "you",
+        "count": 53
+      }
+    ]
+  },
+  "okay": {
+    "before": [
+      {
+        "word": "you",
+        "count": 109
+      },
+      {
+        "word": "it's",
+        "count": 65
+      }
+    ],
+    "after": []
+  },
+  "at": {
+    "before": [
+      {
+        "word": "look",
+        "count": 353
+      },
+      {
+        "word": "looking",
+        "count": 53
+      }
+    ],
+    "after": [
+      {
+        "word": "the",
+        "count": 311
+      },
+      {
+        "word": "me",
+        "count": 124
+      },
+      {
+        "word": "all",
+        "count": 90
+      },
+      {
+        "word": "least",
+        "count": 75
+      },
+      {
+        "word": "this",
+        "count": 72
+      },
+      {
+        "word": "you",
+        "count": 56
+      },
+      {
+        "word": "that",
+        "count": 56
+      }
+    ]
+  },
+  "him": {
+    "before": [
+      {
+        "word": "with",
+        "count": 87
+      },
+      {
+        "word": "to",
+        "count": 86
+      },
+      {
+        "word": "tell",
+        "count": 67
+      },
+      {
+        "word": "of",
+        "count": 58
+      },
+      {
+        "word": "get",
+        "count": 55
+      },
+      {
+        "word": "let",
+        "count": 52
+      }
+    ],
+    "after": [
+      {
+        "word": "to",
+        "count": 80
+      }
+    ]
+  },
+  "well": {
+    "before": [
+      {
+        "word": "as",
+        "count": 56
+      },
+      {
+        "word": "yeah",
+        "count": 56
+      }
+    ],
+    "after": [
+      {
+        "word": "i",
+        "count": 193
+      },
+      {
+        "word": "you",
+        "count": 91
+      },
+      {
+        "word": "that's",
+        "count": 61
+      }
+    ]
+  },
+  "hey": {
+    "before": [],
+    "after": []
+  },
+  "good": {
+    "before": [
+      {
+        "word": "a",
+        "count": 269
+      },
+      {
+        "word": "very",
+        "count": 55
+      }
+    ],
+    "after": [
+      {
+        "word": "morning",
+        "count": 79
+      },
+      {
+        "word": "to",
+        "count": 73
+      },
+      {
+        "word": "night",
+        "count": 68
+      }
+    ]
+  },
+  "they": {
+    "before": [
+      {
+        "word": "are",
+        "count": 52
+      },
+      {
+        "word": "and",
+        "count": 50
+      }
+    ],
+    "after": [
+      {
+        "word": "'re",
+        "count": 406
+      },
+      {
+        "word": "'ll",
+        "count": 68
+      },
+      {
+        "word": "are",
+        "count": 68
+      },
+      {
+        "word": "were",
+        "count": 65
+      },
+      {
+        "word": "'ve",
+        "count": 56
+      }
+    ]
+  },
+  "how": {
+    "before": [
+      {
+        "word": "know",
+        "count": 143
+      }
+    ],
+    "after": [
+      {
+        "word": "do",
+        "count": 164
+      },
+      {
+        "word": "are",
+        "count": 144
+      },
+      {
+        "word": "'s",
+        "count": 106
+      },
+      {
+        "word": "to",
+        "count": 103
+      },
+      {
+        "word": "you",
+        "count": 102
+      },
+      {
+        "word": "much",
+        "count": 90
+      },
+      {
+        "word": "about",
+        "count": 77
+      },
+      {
+        "word": "did",
+        "count": 77
+      },
+      {
+        "word": "can",
+        "count": 75
+      },
+      {
+        "word": "many",
+        "count": 67
+      }
+    ]
+  },
+  "gonna": {
+    "before": [
+      {
+        "word": "i'm",
+        "count": 269
+      },
+      {
+        "word": "you're",
+        "count": 154
+      },
+      {
+        "word": "we're",
+        "count": 123
+      },
+      {
+        "word": "not",
+        "count": 116
+      },
+      {
+        "word": "you",
+        "count": 98
+      },
+      {
+        "word": "just",
+        "count": 50
+      }
+    ],
+    "after": [
+      {
+        "word": "be",
+        "count": 177
+      },
+      {
+        "word": "get",
+        "count": 97
+      },
+      {
+        "word": "do",
+        "count": 94
+      },
+      {
+        "word": "have",
+        "count": 65
+      },
+      {
+        "word": "go",
+        "count": 55
+      }
+    ]
+  },
+  "see": {
+    "before": [
+      {
+        "word": "to",
+        "count": 317
+      },
+      {
+        "word": "you",
+        "count": 208
+      },
+      {
+        "word": "i",
+        "count": 92
+      },
+      {
+        "word": "can",
+        "count": 76
+      },
+      {
+        "word": "i'll",
+        "count": 69
+      }
+    ],
+    "after": [
+      {
+        "word": "you",
+        "count": 328
+      },
+      {
+        "word": "that",
+        "count": 82
+      },
+      {
+        "word": "the",
+        "count": 71
+      },
+      {
+        "word": "it",
+        "count": 56
+      }
+    ]
+  },
+  "her": {
+    "before": [
+      {
+        "word": "with",
+        "count": 71
+      },
+      {
+        "word": "to",
+        "count": 70
+      }
+    ],
+    "after": []
+  },
+  "think": {
+    "before": [
+      {
+        "word": "i",
+        "count": 560
+      },
+      {
+        "word": "you",
+        "count": 359
+      },
+      {
+        "word": "don't",
+        "count": 130
+      },
+      {
+        "word": "to",
+        "count": 52
+      }
+    ],
+    "after": [
+      {
+        "word": "i",
+        "count": 143
+      },
+      {
+        "word": "you",
+        "count": 124
+      },
+      {
+        "word": "you're",
+        "count": 76
+      },
+      {
+        "word": "it's",
+        "count": 73
+      },
+      {
+        "word": "about",
+        "count": 71
+      },
+      {
+        "word": "so",
+        "count": 60
+      },
+      {
+        "word": "of",
+        "count": 57
+      },
+      {
+        "word": "that",
+        "count": 56
+      },
+      {
+        "word": "we",
+        "count": 52
+      }
+    ]
+  },
+  "will": {
+    "before": [
+      {
+        "word": "i",
+        "count": 303
+      },
+      {
+        "word": "you",
+        "count": 128
+      },
+      {
+        "word": "we",
+        "count": 68
+      },
+      {
+        "word": "it",
+        "count": 62
+      }
+    ],
+    "after": [
+      {
+        "word": "be",
+        "count": 170
+      },
+      {
+        "word": "you",
+        "count": 156
+      },
+      {
+        "word": "not",
+        "count": 52
+      }
+    ]
+  },
+  "want": {
+    "before": [
+      {
+        "word": "you",
+        "count": 565
+      },
+      {
+        "word": "i",
+        "count": 378
+      },
+      {
+        "word": "don't",
+        "count": 193
+      },
+      {
+        "word": "just",
+        "count": 56
+      }
+    ],
+    "after": [
+      {
+        "word": "to",
+        "count": 653
+      },
+      {
+        "word": "you",
+        "count": 112
+      },
+      {
+        "word": "me",
+        "count": 100
+      },
+      {
+        "word": "a",
+        "count": 93
+      }
+    ]
+  },
+  "look": {
+    "before": [
+      {
+        "word": "you",
+        "count": 129
+      }
+    ],
+    "after": [
+      {
+        "word": "at",
+        "count": 352
+      },
+      {
+        "word": "like",
+        "count": 70
+      }
+    ]
+  },
+  "yes": {
+    "before": [],
+    "after": [
+      {
+        "word": "i",
+        "count": 83
+      }
+    ]
+  },
+  "did": {
+    "before": [
+      {
+        "word": "what",
+        "count": 153
+      },
+      {
+        "word": "i",
+        "count": 122
+      },
+      {
+        "word": "you",
+        "count": 110
+      },
+      {
+        "word": "why",
+        "count": 81
+      },
+      {
+        "word": "how",
+        "count": 76
+      },
+      {
+        "word": "where",
+        "count": 53
+      }
+    ],
+    "after": [
+      {
+        "word": "you",
+        "count": 526
+      },
+      {
+        "word": "i",
+        "count": 84
+      },
+      {
+        "word": "he",
+        "count": 67
+      }
+    ]
+  },
+  "she": {
+    "before": [
+      {
+        "word": "is",
+        "count": 71
+      },
+      {
+        "word": "and",
+        "count": 62
+      }
+    ],
+    "after": [
+      {
+        "word": "'s",
+        "count": 451
+      },
+      {
+        "word": "was",
+        "count": 116
+      },
+      {
+        "word": "is",
+        "count": 113
+      }
+    ]
+  },
+  "time": {
+    "before": [
+      {
+        "word": "the",
+        "count": 133
+      },
+      {
+        "word": "this",
+        "count": 72
+      },
+      {
+        "word": "first",
+        "count": 60
+      }
+    ],
+    "after": [
+      {
+        "word": "to",
+        "count": 88
+      },
+      {
+        "word": "for",
+        "count": 69
+      },
+      {
+        "word": "i",
+        "count": 50
+      }
+    ]
+  },
+  "back": {
+    "before": [
+      {
+        "word": "go",
+        "count": 87
+      },
+      {
+        "word": "come",
+        "count": 80
+      },
+      {
+        "word": "get",
+        "count": 77
+      },
+      {
+        "word": "be",
+        "count": 51
+      }
+    ],
+    "after": [
+      {
+        "word": "to",
+        "count": 168
+      },
+      {
+        "word": "in",
+        "count": 59
+      }
+    ]
+  },
+  "as": {
+    "before": [],
+    "after": [
+      {
+        "word": "a",
+        "count": 114
+      },
+      {
+        "word": "well",
+        "count": 55
+      }
+    ]
+  },
+  "from": {
+    "before": [
+      {
+        "word": "away",
+        "count": 71
+      }
+    ],
+    "after": [
+      {
+        "word": "the",
+        "count": 207
+      }
+    ]
+  },
+  "he's": {
+    "before": [],
+    "after": [
+      {
+        "word": "a",
+        "count": 133
+      },
+      {
+        "word": "not",
+        "count": 95
+      },
+      {
+        "word": "got",
+        "count": 51
+      }
+    ]
+  },
+  "when": {
+    "before": [],
+    "after": [
+      {
+        "word": "i",
+        "count": 158
+      },
+      {
+        "word": "you",
+        "count": 136
+      }
+    ]
+  },
+  "why": {
+    "before": [
+      {
+        "word": "that's",
+        "count": 95
+      },
+      {
+        "word": "know",
+        "count": 57
+      }
+    ],
+    "after": [
+      {
+        "word": "are",
+        "count": 127
+      },
+      {
+        "word": "don't",
+        "count": 110
+      },
+      {
+        "word": "did",
+        "count": 81
+      },
+      {
+        "word": "do",
+        "count": 80
+      },
+      {
+        "word": "i",
+        "count": 68
+      },
+      {
+        "word": "would",
+        "count": 58
+      }
+    ]
+  },
+  "who": {
+    "before": [
+      {
+        "word": "know",
+        "count": 56
+      }
+    ],
+    "after": [
+      {
+        "word": "'s",
+        "count": 188
+      },
+      {
+        "word": "is",
+        "count": 113
+      },
+      {
+        "word": "are",
+        "count": 106
+      },
+      {
+        "word": "the",
+        "count": 59
+      }
+    ]
+  },
+  "can't": {
+    "before": [
+      {
+        "word": "i",
+        "count": 433
+      },
+      {
+        "word": "you",
+        "count": 196
+      },
+      {
+        "word": "we",
+        "count": 76
+      }
+    ],
+    "after": [
+      {
+        "word": "do",
+        "count": 79
+      },
+      {
+        "word": "be",
+        "count": 53
+      }
+    ]
+  },
+  "us": {
+    "before": [
+      {
+        "word": "of",
+        "count": 108
+      },
+      {
+        "word": "with",
+        "count": 66
+      },
+      {
+        "word": "for",
+        "count": 60
+      }
+    ],
+    "after": [
+      {
+        "word": "to",
+        "count": 50
+      }
+    ]
+  },
+  "going": {
+    "before": [
+      {
+        "word": "i'm",
+        "count": 148
+      },
+      {
+        "word": "you",
+        "count": 106
+      },
+      {
+        "word": "what's",
+        "count": 94
+      },
+      {
+        "word": "is",
+        "count": 72
+      },
+      {
+        "word": "you're",
+        "count": 65
+      },
+      {
+        "word": "not",
+        "count": 57
+      },
+      {
+        "word": "we're",
+        "count": 51
+      }
+    ],
+    "after": [
+      {
+        "word": "to",
+        "count": 452
+      },
+      {
+        "word": "on",
+        "count": 148
+      }
+    ]
+  },
+  "take": {
+    "before": [
+      {
+        "word": "to",
+        "count": 115
+      },
+      {
+        "word": "you",
+        "count": 63
+      },
+      {
+        "word": "i'll",
+        "count": 58
+      }
+    ],
+    "after": [
+      {
+        "word": "a",
+        "count": 144
+      },
+      {
+        "word": "it",
+        "count": 133
+      },
+      {
+        "word": "care",
+        "count": 88
+      },
+      {
+        "word": "the",
+        "count": 63
+      }
+    ]
+  },
+  "an": {
+    "before": [],
+    "after": []
+  },
+  "his": {
+    "before": [
+      {
+        "word": "with",
+        "count": 52
+      }
+    ],
+    "after": []
+  },
+  "man": {
+    "before": [
+      {
+        "word": "a",
+        "count": 84
+      }
+    ],
+    "after": []
+  },
+  "we're": {
+    "before": [],
+    "after": [
+      {
+        "word": "gonna",
+        "count": 123
+      },
+      {
+        "word": "not",
+        "count": 100
+      },
+      {
+        "word": "going",
+        "count": 51
+      }
+    ]
+  },
+  "i'll": {
+    "before": [],
+    "after": [
+      {
+        "word": "be",
+        "count": 155
+      },
+      {
+        "word": "see",
+        "count": 68
+      },
+      {
+        "word": "take",
+        "count": 58
+      },
+      {
+        "word": "get",
+        "count": 57
+      }
+    ]
+  },
+  "say": {
+    "before": [
+      {
+        "word": "you",
+        "count": 171
+      },
+      {
+        "word": "to",
+        "count": 168
+      },
+      {
+        "word": "i",
+        "count": 102
+      }
+    ],
+    "after": [
+      {
+        "word": "that",
+        "count": 98
+      },
+      {
+        "word": "it",
+        "count": 57
+      }
+    ]
+  },
+  "them": {
+    "before": [
+      {
+        "word": "of",
+        "count": 109
+      }
+    ],
+    "after": []
+  },
+  "our": {
+    "before": [],
+    "after": []
+  },
+  "or": {
+    "before": [],
+    "after": [
+      {
+        "word": "something",
+        "count": 52
+      }
+    ]
+  },
+  "really": {
+    "before": [
+      {
+        "word": "i",
+        "count": 113
+      },
+      {
+        "word": "you",
+        "count": 97
+      }
+    ],
+    "after": []
+  },
+  "where": {
+    "before": [
+      {
+        "word": "know",
+        "count": 87
+      }
+    ],
+    "after": [
+      {
+        "word": "are",
+        "count": 187
+      },
+      {
+        "word": "'s",
+        "count": 169
+      },
+      {
+        "word": "is",
+        "count": 107
+      },
+      {
+        "word": "you",
+        "count": 89
+      },
+      {
+        "word": "the",
+        "count": 55
+      },
+      {
+        "word": "did",
+        "count": 52
+      }
+    ]
+  },
+  "love": {
+    "before": [
+      {
+        "word": "i",
+        "count": 308
+      },
+      {
+        "word": "in",
+        "count": 85
+      },
+      {
+        "word": "my",
+        "count": 55
+      }
+    ],
+    "after": [
+      {
+        "word": "you",
+        "count": 208
+      },
+      {
+        "word": "with",
+        "count": 50
+      }
+    ]
+  },
+  "down": {
+    "before": [
+      {
+        "word": "sit",
+        "count": 51
+      }
+    ],
+    "after": [
+      {
+        "word": "the",
+        "count": 53
+      }
+    ]
+  },
+  "need": {
+    "before": [
+      {
+        "word": "i",
+        "count": 251
+      },
+      {
+        "word": "you",
+        "count": 164
+      },
+      {
+        "word": "we",
+        "count": 136
+      },
+      {
+        "word": "don't",
+        "count": 69
+      }
+    ],
+    "after": [
+      {
+        "word": "to",
+        "count": 332
+      },
+      {
+        "word": "a",
+        "count": 82
+      },
+      {
+        "word": "you",
+        "count": 62
+      }
+    ]
+  },
+  "little": {
+    "before": [
+      {
+        "word": "a",
+        "count": 379
+      }
+    ],
+    "after": [
+      {
+        "word": "bit",
+        "count": 70
+      }
+    ]
+  },
+  "some": {
+    "before": [
+      {
+        "word": "have",
+        "count": 59
+      },
+      {
+        "word": "get",
+        "count": 57
+      }
+    ],
+    "after": [
+      {
+        "word": "of",
+        "count": 50
+      }
+    ]
+  },
+  "then": {
+    "before": [
+      {
+        "word": "and",
+        "count": 163
+      }
+    ],
+    "after": [
+      {
+        "word": "i",
+        "count": 82
+      },
+      {
+        "word": "you",
+        "count": 71
+      }
+    ]
+  },
+  "would": {
+    "before": [
+      {
+        "word": "i",
+        "count": 119
+      },
+      {
+        "word": "why",
+        "count": 58
+      },
+      {
+        "word": "you",
+        "count": 56
+      },
+      {
+        "word": "it",
+        "count": 55
+      },
+      {
+        "word": "that",
+        "count": 50
+      }
+    ],
+    "after": [
+      {
+        "word": "you",
+        "count": 178
+      },
+      {
+        "word": "be",
+        "count": 99
+      },
+      {
+        "word": "have",
+        "count": 59
+      }
+    ]
+  },
+  "way": {
+    "before": [
+      {
+        "word": "the",
+        "count": 204
+      },
+      {
+        "word": "this",
+        "count": 57
+      }
+    ],
+    "after": [
+      {
+        "word": "to",
+        "count": 81
+      }
+    ]
+  },
+  "been": {
+    "before": [
+      {
+        "word": "i've",
+        "count": 109
+      },
+      {
+        "word": "have",
+        "count": 93
+      },
+      {
+        "word": "it's",
+        "count": 70
+      },
+      {
+        "word": "you've",
+        "count": 67
+      },
+      {
+        "word": "you",
+        "count": 64
+      },
+      {
+        "word": "has",
+        "count": 58
+      }
+    ],
+    "after": [
+      {
+        "word": "a",
+        "count": 57
+      }
+    ]
+  },
+  "uh": {
+    "before": [],
+    "after": []
+  },
+  "never": {
+    "before": [
+      {
+        "word": "i",
+        "count": 107
+      },
+      {
+        "word": "you",
+        "count": 71
+      }
+    ],
+    "after": []
+  },
+  "could": {
+    "before": [
+      {
+        "word": "i",
+        "count": 180
+      },
+      {
+        "word": "you",
+        "count": 135
+      },
+      {
+        "word": "we",
+        "count": 82
+      }
+    ],
+    "after": [
+      {
+        "word": "be",
+        "count": 97
+      },
+      {
+        "word": "you",
+        "count": 82
+      },
+      {
+        "word": "have",
+        "count": 51
+      }
+    ]
+  },
+  "tell": {
+    "before": [
+      {
+        "word": "to",
+        "count": 128
+      },
+      {
+        "word": "you",
+        "count": 85
+      }
+    ],
+    "after": [
+      {
+        "word": "me",
+        "count": 266
+      },
+      {
+        "word": "you",
+        "count": 224
+      },
+      {
+        "word": "him",
+        "count": 67
+      }
+    ]
+  },
+  "were": {
+    "before": [
+      {
+        "word": "you",
+        "count": 307
+      },
+      {
+        "word": "we",
+        "count": 119
+      },
+      {
+        "word": "they",
+        "count": 65
+      }
+    ],
+    "after": [
+      {
+        "word": "you",
+        "count": 61
+      }
+    ]
+  },
+  "sorry": {
+    "before": [
+      {
+        "word": "i'm",
+        "count": 235
+      },
+      {
+        "word": "so",
+        "count": 95
+      }
+    ],
+    "after": [
+      {
+        "word": "i",
+        "count": 59
+      }
+    ]
+  },
+  "had": {
+    "before": [
+      {
+        "word": "i",
+        "count": 199
+      },
+      {
+        "word": "we",
+        "count": 76
+      },
+      {
+        "word": "you",
+        "count": 69
+      }
+    ],
+    "after": [
+      {
+        "word": "a",
+        "count": 160
+      },
+      {
+        "word": "to",
+        "count": 104
+      }
+    ]
+  },
+  "please": {
+    "before": [],
+    "after": [
+      {
+        "word": "don't",
+        "count": 66
+      }
+    ]
+  },
+  "let's": {
+    "before": [],
+    "after": [
+      {
+        "word": "go",
+        "count": 192
+      },
+      {
+        "word": "get",
+        "count": 101
+      }
+    ]
+  },
+  "something": {
+    "before": [
+      {
+        "word": "you",
+        "count": 58
+      },
+      {
+        "word": "or",
+        "count": 52
+      }
+    ],
+    "after": []
+  }
+}

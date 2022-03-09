@@ -1,6 +1,9 @@
 const folderAnalyse = require('./utils/folderAnalyse')
 const pathJoin = require('path').join
 const textSanitizer = require('./utils/textSanitizer')
+const allWords2 = require('./utils/allWords2.json').slice(0, 1)
+const readlineSync = require('readline-sync')
+const wordsMostUsed = require('./words most used.json')
 
 const srtDatas = folderAnalyse(pathJoin(__dirname, './movie srt'), {
   filterExt: '.srt',
@@ -10,13 +13,28 @@ const srtDatas = folderAnalyse(pathJoin(__dirname, './movie srt'), {
 const allText = srtDatas
   .reduce((acc, cur) => {
     const splittedByPunctuation = cur.join(' ').split(/[.*|?|!]/i)
-    // console.log(splittedByPunctuation)
     return [...acc, ...splittedByPunctuation]
   }, [])
   .filter(text => text.length > 10 && text.length < 60)
 
+function filtrar(sizeWordMostUsed, payload) {
+  if (!sizeWordMostUsed) return payload
+
+  const payLoadFiltered = payload.filter(p => {
+    const allWordsInPayload = p.word.match(new RegExp(`[’'a-zA-Z]+`, 'gi'))
+    const isPayloadWordsInMostUsed = allWordsInPayload.every(w =>
+      wordsMostUsed.slice(0, sizeWordMostUsed).includes(w)
+    )
+    return isPayloadWordsInMostUsed
+  })
+
+  return payLoadFiltered
+}
+
 function findBeforeAndAfterPercent(word, allText, options = {}) {
+  word = word.toLowerCase()
   const count = {
+    alone: 0,
     before: {},
     after: {},
   }
@@ -24,7 +42,8 @@ function findBeforeAndAfterPercent(word, allText, options = {}) {
     const textSplittedWord = text
       .trim()
       .toLowerCase()
-      .match(new RegExp(`\\b${word}\\b|[a-zA-Z']+`, 'gi'))
+      .replace(/’/gi, "'")
+      .match(new RegExp(`\\b${word}\\b|[’'a-zA-Z]+`, 'gi'))
 
     if (textSplittedWord) {
       const indexWord = textSplittedWord.indexOf(word)
@@ -53,7 +72,7 @@ function findBeforeAndAfterPercent(word, allText, options = {}) {
           wordBefore = textSplittedWord[indexWord - 1]
           wordAfter = textSplittedWord[indexWord + 1]
         }
-
+        count.alone += 1
         if (wordBefore) {
           count.before[wordBefore] = count.before[wordBefore]
             ? count.before[wordBefore] + 1
@@ -69,131 +88,49 @@ function findBeforeAndAfterPercent(word, allText, options = {}) {
   })
 
   //sort by count [{word: 'word', count: 10}, {word: 'word', count: 10}]
-  const sortBefore = Object.keys(count.before).map(word => ({
+  let sortBefore = Object.keys(count.before).map(word => ({
     word,
     count: count.before[word],
   }))
   sortBefore.sort((a, b) => b.count - a.count)
 
-  const sortAfter = Object.keys(count.after).map(word => ({
+  let sortAfter = Object.keys(count.after).map(word => ({
     word,
     count: count.after[word],
   }))
   sortAfter.sort((a, b) => b.count - a.count)
 
+  if (typeof options?.wordMostUsed === 'number') {
+    sortBefore = filtrar(options.wordMostUsed, sortBefore)
+    sortAfter = filtrar(options.wordMostUsed, sortAfter)
+  }
+
   return {
+    alone: count.alone,
+    first10Before: Math.round(
+      (sortBefore.slice(0, 10).reduce((acc, cur) => acc + cur.count, 0) * 100) /
+        count.alone
+    ), //+ '%',
+    first10After: Math.round(
+      (sortAfter.slice(0, 10).reduce((acc, cur) => acc + cur.count, 0) * 100) /
+        count.alone
+    ), //+ '%',
     before: sortBefore.slice(0, 10),
     after: sortAfter.slice(0, 10),
   }
 }
-const word = 'if'
 
-const beforeAndAfter = findBeforeAndAfterPercent(word, allText, {
-  numberOfWords: 1,
-})
-console.log(beforeAndAfter)
+module.exports = { findBeforeAndAfter: findBeforeAndAfterPercent, allText }
 
-const beforeAndAfter2 = findBeforeAndAfterPercent(word, allText, {
-  numberOfWords: 2,
-})
-console.log(beforeAndAfter2)
+while (true) {
+  const word = readlineSync.question('palavra: ')
+  // const word = 'you'
+  if (word === '0') break
+  const beforeAndAfter = findBeforeAndAfterPercent(word, allText, {
+    numberOfWords: 2,
+    wordMostUsed: 100,
+  })
 
-// const mesquinha = [
-//   'but',
-//   'i',
-//   'you',
-//   'he',
-//   'she',
-//   'it',
-//   'they',
-//   'we',
-//   'us',
-//   'them',
-//   'her',
-//   'him',
-//   "i'll",
-//   "we'll",
-//   "you'll",
-//   "i'm",
-//   "you're",
-//   "he's",
-//   'my',
-//   'an',
-//   'the',
-//   'your',
-//   'me',
-//   'and',
-//   'man',
-//   'car',
-// ]
-// function catalogar() {
-//   const catalog = []
-//   const words = []
-//   allText.slice(0, 50).forEach((text, i) => {
-//     console.log(`${i}/${200}`)
-//     const textSplittedWord = text
-//       .trim()
-//       .toLowerCase()
-//       .match(/[a-zA-Z']+/g)
-
-//     textSplittedWord.forEach(word => {
-//       if (!words.includes(word)) {
-//         words.push(word)
-//         if (mesquinha.includes(word)) return
-//         const beforeAndAfter = findBeforeAndAfterPercent(word, allText, {
-//           numberOfWords: 2,
-//         })
-//         beforeAndAfter.before.slice(0, 3).forEach(before => {
-//           if (
-//             before.count > 25 &&
-//             // before.count < 40 &&
-//             !mesquinha.includes(before.word)
-//           ) {
-//             catalog.push(before.word + ' ' + word)
-//           }
-//         })
-//         beforeAndAfter.after.slice(0, 3).forEach(after => {
-//           if (
-//             after.count > 25 &&
-//             // after.count < 40 &&
-//             !mesquinha.includes(after.word)
-//           ) {
-//             catalog.push(word + ' ' + after.word)
-//           }
-//         })
-//       }
-//     })
-//   })
-//   // unique catalog
-//   const uniqueCatalog = catalog.filter((word, i) => {
-//     return catalog.indexOf(word) === i
-//   })
-//   return uniqueCatalog
-// }
-
-// const catalogação = catalogar()
-// //save json
-// const fs = require('fs')
-// fs.writeFileSync(
-//   pathJoin(__dirname, './catalog.json'),
-//   JSON.stringify(catalogação, null, 2)
-// )
-// function createText(startWord, len) {
-//   //findBeforeAndAfterPercent
-//   // loop on len
-//   const text = [startWord]
-
-//   for (let i = 0; i < len; i++) {
-//     const { after } = findBeforeAndAfterPercent(text.slice(-1)[0], allText)
-//     const beforeWords = after.map(v => v.word)
-//     const random = Math.floor(Math.random() * 5)
-//     const selectedWord = beforeWords
-//       .slice(random)
-//       .find(w => !text.slice(-20).includes(w))
-//     if (!selectedWord) break
-//     text.push(selectedWord)
-//   }
-//   return text.join(' ')
-// }
-
-// console.log(createText('i', 20))
+  console.log(beforeAndAfter)
+  console.log('\n')
+}
