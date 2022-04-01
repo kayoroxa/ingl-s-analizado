@@ -128,7 +128,7 @@ while (true) {
   if (word === '0') break
   const beforeAndAfter = findBeforeAndAfterPercent(word, allText, {
     numberOfWords: 2,
-    wordMostUsed: 100,
+    // wordMostUsed: 100,
   })
 
   console.log(beforeAndAfter)
