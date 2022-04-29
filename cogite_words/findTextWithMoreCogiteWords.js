@@ -3,10 +3,9 @@ const joinPath = require('path').join
 const cogiteWords = require('./cogite_words.json')
 const onlyCogitePt = cogiteWords.map(v => v[1])
 
-const text = fs.readFileSync(
-  joinPath(__dirname, './Essencialismo-greg-mckeown.txt'),
-  'utf8'
-)
+const text = fs
+  .readFileSync(joinPath(__dirname, './sampleText.txt'), 'utf8')
+  .replace(/\n\n/g, ' ')
 
 function getPercentage(textWords, cogiteWords) {
   const words = textWords
