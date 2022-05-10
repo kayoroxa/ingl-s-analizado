@@ -4,6 +4,7 @@ const dict = [
   ["i'm gonna", 'ahmma'],
   ['going to', 'gonna'],
   ['when are you', 'whenriu'],
+  ['because', "'cause"],
   // ['the ', 'dâh '],
   // ['you', 'yah'],
   ['what you', 'wha-tch-yah'],
@@ -32,6 +33,7 @@ const dict = [
   ['could have', 'kurah'],
   ["could've", 'kurah'],
   ['want to', 'wanna'],
+  ['to the', 'dârah'],
   ['which is', 'wichis'],
   ["would've", 'wurah'],
   ['would have', 'wurah'],
@@ -110,6 +112,8 @@ const dict = [
   ['have to', 'hafta'],
   ['t are you', 'tcha'],
   ['cause s', 'causs'],
+  [' will', "'ll"],
+
   // ['where are you', 'whereya'],
   ['nt o', 'no'],
   ['\\bthem\\b', "'em"],
@@ -160,8 +164,9 @@ function generateConnected(frase) {
 }
 
 generateConnected(`
-whose alarm went off at 7:15 for his 8 am class.
+
 `)
+//the women will go to the store because they want to buy shoes
 // but we hadn't heard from Meg all day
 // I tried to get to my kids, whose rooms were on opposite floors.
 // i'd like each of you to pick a name
