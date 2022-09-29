@@ -4,7 +4,7 @@ const textSanitizer = require('./utils/textSanitizer')
 const allWords2 = require('./utils/allWords2.json').slice(0, 1)
 const readlineSync = require('readline-sync')
 const wordsMostUsed = require('./words most used.json')
-
+const fs = require('fs')
 const srtDatas = folderAnalyse(pathJoin(__dirname, './movie srt'), {
   filterExt: '.srt',
   readMode: true,
@@ -16,6 +16,10 @@ const allText = srtDatas
     return [...acc, ...splittedByPunctuation]
   }, [])
   .filter(text => text.length > 10 && text.length < 60)
+
+const datSetText = fs.readFileSync('./datasetText.txt', { encoding: 'utf-8' })
+
+allText.push(datSetText)
 
 function filtrar(sizeWordMostUsed, payload) {
   if (!sizeWordMostUsed) return payload

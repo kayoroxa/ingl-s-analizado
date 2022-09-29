@@ -8,6 +8,11 @@ const dict = [
   // ['the ', 'dâh '],
   // ['you', 'yah'],
   ['what you', 'wha-tch-yah'],
+  ['saw it', 'sóêt'],
+  ["what's", 'watts'],
+  ['with the', 'ui-thee'],
+  ["it's a", 'tsuh'],
+
   ['what do you', 'whatcha'],
   ['what have you', 'whatcha'],
   ['what are you', 'whatcha'],
@@ -17,7 +22,13 @@ const dict = [
   ['you', 'yâh'],
   ['ve i', 'vi', false],
   ["isn't it", 'innit'],
-
+  ['out of', 'outta'],
+  ['need to', 'niddâ', 'nidu'],
+  ['thinking about', 'thinkêrêbou'],
+  ['we always', 'we.ouss'],
+  ['think you should', 'i thinkushould'],
+  ['ask this ', 'aSsis'],
+  ['to his', 'tuuzzs'],
   ['is there', 'isde:'],
   ['got to', 'garâh'],
   ['get to', 'ge.to'],
@@ -30,15 +41,20 @@ const dict = [
   ['a lot of', 'alotta'],
   ["should've", 'shulrah'],
   ['should have', 'shulrah'],
+  ["we'd have", 'we.rave'],
+  ['we would have', 'we.rave'],
   ['could have', 'kurah'],
   ["could've", 'kurah'],
   ['want to', 'wanna'],
   ['to the', 'dârah'],
   ['which is', 'wichis'],
+  ['that he', 'thaddi'],
   ["would've", 'wurah'],
   ['would have', 'wurah'],
   ['must have', 'mustah'],
   ["must've", 'mustah'],
+  ["can't it", 'cannê'],
+  ["can't even", 'canddiven'],
   ['ought to', 'oughrah'],
   ['do you', "d'you"],
   ["it's the", "it'sâh"],
@@ -48,6 +64,7 @@ const dict = [
   ['and i also', 'enaolsol'],
   ['does this have', 'dâzês.ave'],
   ['does that', 'zat'],
+  ['nd that', 'n.nat'],
   ['does this', 'dâzes'],
   ['as him', 'asim'],
   ['asked (him|her|if)', 'esT.$1'],
@@ -75,6 +92,7 @@ const dict = [
   ["and I'd always", 'anai-rolways'],
   ["and it'll", "anir'll"],
   ['and this', 'anis'],
+  ['and w', 'anw'],
   ['t to\\b', '.râh'],
   ['t do\\b', 'tchâh'],
   ["why he's so", 'whaiSS so'],
@@ -104,16 +122,24 @@ const dict = [
   ['that in', 'tharin'],
   ['that is', 'thadis'],
   ['for the', 'fôthê'],
+  ["didn't", 'rin'],
+  ["doesn't", 'doesn'],
   // ['n you', 'nyou'],
   ['with this', 'withis'],
   ['should we', 'shou-we'],
   ['and i', 'enai'],
+
   ['n the', 'nnah'],
   ['have to', 'hafta'],
   ['t are you', 'tcha'],
   ['cause s', 'causs'],
   [' will', "'ll"],
+  ['r h', '.rr'],
+  ['t h', '.dd'],
+  ['s w', '.su'],
+  ['o w', 'oW'],
 
+  ['t p', 'p'], //get pregnant
   // ['where are you', 'whereya'],
   ['nt o', 'no'],
   ['\\bthem\\b', "'em"],
@@ -125,18 +151,24 @@ const dict = [
   ['t a', 'ttê'],
   ['n th', 'n'],
   ['d to', 'dâh'],
-  ['t i', 'di'],
+  ['t i\\b', 'ddai'],
+  ['t i', 'ddi'],
   ['d i', 'rai'],
   ['n one', 'nuone'],
   // ['d ', ''],
   ['t t', '.t'],
   // ['t ', ''],
-  ["(n|v|p|g|s|m|k|(?<!f)f|th|r) (h|')?(a|e|i|o|w|u|y)", '.$1$3'],
+  ["(n|v|p|g|s|m|k|(?<!f)f|th|r|l) (h(?!as)|')?(a|e|i|o|w|u|y)", '.$1$3'],
+  ['(y|i) s', '.$1s'],
   ['d a', 'da'],
-  ['e ea', 'E'],
+  ['e (ea|i|y)', 'i'],
+  ['have a', 'ha:va'],
   ['ch o', "ch'o"],
   ['ne o', 'no'],
   ['t l ', 'tl'],
+  ['ate a', 'eira'],
+  ['te a', 'ra'],
+  ['e a', 'eya.'],
   ['m i', 'mi'],
   [' to\\b', ' râ'],
   ['he i', 'hei'],
@@ -145,16 +177,22 @@ const dict = [
   ['if we', 'ife', false],
   ['on râ', 'on to'],
   ['(?<!h)e e', 'e'],
+  ['s s', 's'],
 ]
 
 // dict.slice(90, 100).forEach(v => {
 //   console.log(v[0], '👉', v[1])
 // })
 
+const readlineSync = require('readline-sync')
+const fraseInput = readlineSync.question('frase: ')
+
+const frase = generateConnected(fraseInput)
+
 function generateConnected(frase) {
   console.log(frase)
 
-  dict.reduce((acc, curr) => {
+  return dict.reduce((acc, curr) => {
     const replaced = curr
       ? acc.replace(new RegExp(curr[0], 'gi'), curr[1])
       : acc
@@ -163,9 +201,9 @@ function generateConnected(frase) {
   }, frase)
 }
 
-generateConnected(`
+console.log(frase.replace(/\.|\n/g, ''))
 
-`)
+//But I click on every video and i'm being open about it
 //the women will go to the store because they want to buy shoes
 // but we hadn't heard from Meg all day
 // I tried to get to my kids, whose rooms were on opposite floors.

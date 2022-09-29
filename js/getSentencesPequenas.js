@@ -1,6 +1,7 @@
 const { srtAnalyse, getWordsInSentence } = require('../utils/srtAnalyse')
+const folderAnalyser = require('../utils/folderAnalyse')
 
-const frasesWithBlocks = srtAnalyse('sentences')
+const frasesWithBlocks = folderAnalyser('sentences')
   // .slice(0, 6000)
   .map((sentence, i, allSentences) => {
     return getWordsInSentence(sentence)?.join(' ')

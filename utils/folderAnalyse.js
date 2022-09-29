@@ -18,15 +18,22 @@ function folderAnalyse(folderPath, option) {
   return files
 }
 
-function readFiles(files) {
+function readFiles(files, options) {
   const dataFiles = files.map(file => {
+    let retornar
+
     const strFile = fs.readFileSync(file, { encoding: 'utf8' })
     if (file.endsWith('.srt')) {
-      return parser.fromSrt(strFile)
+      retornar = parser.fromSrt(strFile, options?.time)
     } else if (file.endsWith('.json')) {
-      return JSON.parse(strFile)
+      retornar = JSON.parse(strFile)
+    } else {
+      retornar = strFile
     }
-    return strFile
+
+    return options?.showFileInfo
+      ? { fileInfo: { path: file }, content: retornar }
+      : retornar
   })
   return dataFiles
 }
@@ -34,7 +41,7 @@ function readFiles(files) {
 function main(folderPath, options) {
   const filesPath = folderAnalyse(folderPath, { ...options, withPath: true })
   if (options?.readMode === true) {
-    const dataFiles = readFiles(filesPath)
+    const dataFiles = readFiles(filesPath, options)
     return dataFiles
   }
   return filesPath

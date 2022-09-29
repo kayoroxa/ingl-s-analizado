@@ -70,4 +70,4 @@ function generateVariants(words) {
   return [...advanced]
 }
 
-// console.log(generateVariants(['you', 'are', 'getting', 'weaker']))
+console.log(generateVariants(['you', 'are', 'getting', 'weaker']))
