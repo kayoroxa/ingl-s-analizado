@@ -2,9 +2,11 @@ const dict = [
   ['what do you', 'wha-r-yah'],
   ["i'm going to", 'ahmma'],
   ["i'm gonna", 'ahmma'],
+  ['can', 'ken'],
   ['going to', 'gonna'],
   ['when are you', 'whenriu'],
   ['because', "'cause"],
+
   // ['the ', 'dâh '],
   // ['you', 'yah'],
   ['what you', 'wha-tch-yah'],
@@ -12,14 +14,23 @@ const dict = [
   ["what's", 'watts'],
   ['with the', 'ui-thee'],
   ["it's a", 'tsuh'],
-
+  ['i am', 'aiem'],
+  ["i'm", 'amm'],
   ['what do you', 'whatcha'],
   ['what have you', 'whatcha'],
   ['what are you', 'whatcha'],
   ['some more', "s'more"],
   ['used to', 'usta'],
   ['each of you', 'etchâviu'],
-  ['you', 'yâh'],
+  ['did you', 'djâh'],
+  ['d your', '-dyour'],
+  ['your', 'yâr'],
+  ["you're", 'yâr'],
+  ['t you', '-tchiu'],
+  ['you', 'yâu'],
+  ['\\bi\\b', 'ai'],
+  ['me ', '-M'],
+  ['m ', '-M'],
   ['ve i', 'vi', false],
   ["isn't it", 'innit'],
   ['out of', 'outta'],
@@ -32,8 +43,7 @@ const dict = [
   ['is there', 'isde:'],
   ['got to', 'garâh'],
   ['get to', 'ge.to'],
-  ['i am', 'amm'],
-  ["i'm", 'amm'],
+  ['something ', 'sãm-thên-g'],
   ['i will', 'auh'],
   ["i'll", 'auh'],
   ['t you', 'tchyah'],
@@ -84,7 +94,9 @@ const dict = [
   ['i want you to', 'iuan tchê rê'],
   ["think i'm", 'thinkM'],
   ['heard anything', 'heardything'],
-  ["there's a", 'reza'],
+  ["there's a", 'deza'],
+  ['cause', 'kêz'],
+  ['z th', 'z'],
   ['With an accident', 'withanAccident'],
   ['why would they', 'ua rdey'],
   ['how would i', 'rauurai'],
@@ -109,6 +121,7 @@ const dict = [
   ['with all', 'withou'],
   ['did i ever tell you', 'dirai ever tellyou'],
   ["How'd you", 'howdju'],
+
   ['about anything', 'abouranything'],
   ["l'm actually", "i'machually"],
   ['go together', 'gorogether'],
@@ -128,17 +141,19 @@ const dict = [
   ['with this', 'withis'],
   ['should we', 'shou-we'],
   ['and i', 'enai'],
-
+  ["'ve", 'V'],
+  ['ve th', '-Vth'],
+  ['ve\\b', '-v'],
   ['n the', 'nnah'],
   ['have to', 'hafta'],
   ['t are you', 'tcha'],
   ['cause s', 'causs'],
   [' will', "'ll"],
-  ['r h', '.rr'],
+  ['r h', '-rr'],
   ['t h', '.dd'],
   ['s w', '.su'],
   ['o w', 'oW'],
-
+  ['y i', 'y-i'],
   ['t p', 'p'], //get pregnant
   // ['where are you', 'whereya'],
   ['nt o', 'no'],
@@ -150,7 +165,8 @@ const dict = [
   ['t as', 'ttás'],
   ['t a', 'ttê'],
   ['n th', 'n'],
-  ['d to', 'dâh'],
+  ['d to', '-dâh'],
+
   ['t i\\b', 'ddai'],
   ['t i', 'ddi'],
   ['d i', 'rai'],
@@ -158,7 +174,7 @@ const dict = [
   // ['d ', ''],
   ['t t', '.t'],
   // ['t ', ''],
-  ["(n|v|p|g|s|m|k|(?<!f)f|th|r|l) (h(?!as)|')?(a|e|i|o|w|u|y)", '.$1$3'],
+  ["(n|v|p|g|s|m|k|(?<!f)f|th|r|l) (h(?!as)|')?(a|e|i|o|w|u|y)", '-$1$3'],
   ['(y|i) s', '.$1s'],
   ['d a', 'da'],
   ['e (ea|i|y)', 'i'],
@@ -177,7 +193,7 @@ const dict = [
   ['if we', 'ife', false],
   ['on râ', 'on to'],
   ['(?<!h)e e', 'e'],
-  ['s s', 's'],
+  ['s s', '-s'],
 ]
 
 // dict.slice(90, 100).forEach(v => {
@@ -185,23 +201,33 @@ const dict = [
 // })
 
 const readlineSync = require('readline-sync')
-const fraseInput = readlineSync.question('frase: ')
 
-const frase = generateConnected(fraseInput)
+async function app() {
+  const fraseInput = readlineSync.question('frase: ')
 
-function generateConnected(frase) {
-  console.log(frase)
+  const frase = generateConnected(fraseInput)
 
-  return dict.reduce((acc, curr) => {
-    const replaced = curr
-      ? acc.replace(new RegExp(curr[0], 'gi'), curr[1])
-      : acc
-    if (acc !== replaced) console.log(replaced.replace('\n', ''))
-    return replaced
-  }, frase)
+  console.log('\n------------------\n')
+
+  function generateConnected(frase) {
+    console.log(frase)
+
+    return dict.reduce((acc, curr) => {
+      const replaced = curr
+        ? acc.replace(new RegExp(curr[0], 'gi'), curr[1])
+        : acc
+      // if (acc !== replaced) console.log('       R:', curr[0])
+      if (acc !== replaced) console.log(replaced.replace('\n', ''))
+      return replaced
+    }, frase)
+  }
+
+  // console.log(frase.replace(/\.|\n/g, ''))
+  // console.log('\n------------------\n\n\n')
+  // app()
 }
 
-console.log(frase.replace(/\.|\n/g, ''))
+app()
 
 //But I click on every video and i'm being open about it
 //the women will go to the store because they want to buy shoes
