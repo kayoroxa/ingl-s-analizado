@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="head">CTS</h1>
+    </div>
+    <audio src="./audios/tAQOhsaCz8s.mp3" controls></audio>
+    <button onclick="next()">Play</button>
+    <button onclick="repetir()">Repetir</button>
+    <script src="./result/result.js"></script>
+    <script>
+      let index = -1
+      function next() {
+        index++
+        document.querySelector('#head').textContent = 'CTS: ' + (index + 1)
+        let audio = document.querySelector('audio')
+        audio.currentTime = result[index].startTime - 1 || 0
+        audio.play()
+        document.querySelector('button').textContent = 'Next'
+      }
+      function repetir() {
+        if (index === -1) index++
+        let audio = document.querySelector('audio')
+        audio.currentTime = result[index].startTime - 1
+        audio.play()
+      }
+    </script>
+  </body>
+</html>
