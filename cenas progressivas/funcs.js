@@ -2,6 +2,13 @@ const textSanitizer = require('../utils/textSanitizer')
 const folderAnalyser = require('../utils/folderAnalyse')
 const pathJoin = require('path').join
 
+function getAllTextFromMovie(movieSrt) {
+  return {
+    ...movieSrt,
+    content: movieSrt.content.map(movieSrt => movieSrt.text).join(' '),
+  }
+}
+
 function getScene(movieSrt, payload) {
   let lastSentenceEndTime = 0
 
@@ -68,4 +75,4 @@ function readSrt(path) {
   })
 }
 
-module.exports = { getScene, getScore, readSrt }
+module.exports = { getScene, getScore, readSrt, getAllTextFromMovie }

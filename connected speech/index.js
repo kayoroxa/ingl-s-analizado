@@ -1,4 +1,4 @@
-const dict = [
+let myDict = [
   ['what do you', 'wha-r-yah'],
   ["i'm going to", 'ahmma'],
   ["i'm gonna", 'ahmma'],
@@ -63,6 +63,7 @@ const dict = [
   ['t you', 'tchyah'],
   ['lot of s', 'loras'],
   ['a lot of', 'alotta'],
+  ['what', 'wha'],
   ["should've", 'shulrah'],
   ['should have', 'shulrah'],
   ["we'd have", 'we.rave'],
@@ -92,6 +93,7 @@ const dict = [
   ['does this', 'dâzes'],
   ['as him', 'asim'],
   ['asked (him|her|if)', 'esT.$1'],
+  ['ve h(er|him)', '-v$1'],
   ['s of y', 'səy'],
   ['of what', 'ovuat'],
   ['of\\b', 'ov'],
@@ -118,7 +120,8 @@ const dict = [
   ['With an accident', 'withanAccident'],
   ['why would they', 'ua rdey'],
   ['how would i', 'rauurai'],
-  ['would he', 'uâre'],
+  ['would he', 'uâri'],
+  ['would (a|e|i|o|u)', `u-r$1`],
   ["and I'd always", 'anai-rolways'],
   ["and it'll", "anir'll"],
   ['and this', 'anis'],
@@ -151,6 +154,7 @@ const dict = [
   ['them all', 'themou'],
   ['something in the', 'sometinina'],
   ['that in', 'tharin'],
+  ['was', 'waz'],
   ['that is', 'thadis'],
   ['for the', 'fôthê'],
   ["didn't", 'rin'],
@@ -162,13 +166,18 @@ const dict = [
   ["'ve", 'V'],
   ['How do', 'how-ddə'],
   ['ing\\b', 'in'],
+  ['(v|p|t|k)ed\\b', '$1t'],
+  ['t h', "-t'h"],
   ['ve th', '-Vth'],
   ['ve\\b', '-v'],
-  ['n the', 'nnah'],
+  ['n these', 'niz'],
+  ['n the\\b', 'nnah'],
   ['have to', 'hafta'],
   ['t are you', 'tcha'],
   ['cause s', 'causs'],
+  ['out in', 'a··in'],
   [' will', "'ll"],
+  ['r (o|a|e|i|u)', '-r$1'],
   ['r h', '-rr'],
   ['t h', '.dd'],
   ['s w', '.su'],
@@ -176,7 +185,8 @@ const dict = [
   ['y i', 'y-i'],
   ['t p', 'p'], //get pregnant
   // ['where are you', 'whereya'],
-  ['nt o', 'no'],
+  ['nt o', '-no'],
+  ['v the', '-Vthe'],
   ['\\bthem\\b', "'em"],
   ['\\bhim\\b', 'im'],
   ['\\bhis\\b', 'is'],
@@ -211,6 +221,7 @@ const dict = [
   [' to\\b', ' râ'],
   ['he i', 'hei'],
   ['re o', 'ro'],
+  ['z (a|e|i|u)', 'z$1'],
   ['n m', '.m'],
   ['if we', 'ife', false],
   ['on râ', 'on to'],
@@ -222,34 +233,42 @@ const dict = [
 //   console.log(v[0], '👉', v[1])
 // })
 
-const readlineSync = require('readline-sync')
+function generateConnected(frase) {
+  console.log(frase)
+  const steps = []
 
-async function app() {
-  const fraseInput = readlineSync.question('frase: ')
+  const sentenceConnected = myDict.reduce((acc, curr) => {
+    const replaced = curr
+      ? acc.replace(new RegExp(curr[0], 'gi'), curr[1])
+      : acc
+    if (acc !== replaced) console.log('       R:', curr[0])
+    if (acc !== replaced) {
+      steps.push(replaced.replace('\n', ''))
+      console.log(replaced.replace('\n', ''))
+    }
+    return replaced
+  }, frase)
 
-  const frase = generateConnected(fraseInput)
-
-  console.log('\n------------------\n')
-
-  function generateConnected(frase) {
-    console.log(frase)
-
-    return dict.reduce((acc, curr) => {
-      const replaced = curr
-        ? acc.replace(new RegExp(curr[0], 'gi'), curr[1])
-        : acc
-      if (acc !== replaced) console.log('       R:', curr[0])
-      if (acc !== replaced) console.log(replaced.replace('\n', ''))
-      return replaced
-    }, frase)
+  return {
+    sentenceConnected,
+    steps,
   }
-
-  // console.log(frase.replace(/\.|\n/g, ''))
-  // console.log('\n------------------\n\n\n')
-  // app()
 }
 
-app()
+// const readlineSync = require('readline-sync')
+// async function app() {
+//   const fraseInput = readlineSync.question('frase: ')
+
+//   generateConnected(fraseInput)
+
+//   console.log('\n------------------\n')
+
+//   // console.log(frase.replace(/\.|\n/g, ''))
+//   // console.log('\n------------------\n\n\n')
+//   // app()
+// }
+
+// app()
 
 //But I click on every video and i'm being open about it
 //the women will go to the store because they want to buy shoes

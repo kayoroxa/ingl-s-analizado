@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+
 const words = [
   'you',
   'i',
@@ -12079,3 +12080,5 @@ const words = [
   'e',
   '',
 ].slice(0, 250)
+
+module.exports = words
