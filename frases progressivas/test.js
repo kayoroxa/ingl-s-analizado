@@ -47,22 +47,4 @@ function getAll(quero) {
   return result
 }
 
-const query = `
-in
-on
-at
-`
-
-// const s = getAll().filter(f => f.split(' ').length > 5)
-// console.log(s.join('\n'))
-
-const allAll = query
-  .split('\n')
-  .filter(Boolean)
-  .map((q, i) => {
-    console.clear()
-    console.log(i, query.split('\n').filter(Boolean).length)
-    return getAll(q)
-  })
-
-fs.writeFileSync(__dirname + '/in-on-at.json', JSON.stringify(allAll, null, 2))
+getAll()
