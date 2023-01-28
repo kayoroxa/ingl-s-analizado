@@ -5,7 +5,7 @@ const txt = fs.readFileSync(
   joinPath(__dirname, '../890k sentences in english.txt'),
   { encoding: 'utf-8' }
 )
-let _commonWords = require('../words most used.json').slice(0, 40)
+let _commonWords = require('../words most used.json').slice(0, 80)
 let cogite = require('../cogite_words/cogite_words.json')
   .map(v => v[0])
   .slice(0, 300)
@@ -15,7 +15,10 @@ const allSentences = txt.split('\r\n')
 
 function checkWords(sentence, additionalWords = '') {
   // sentence = sentence.replace(/[^\w\s]/gi, '')
-  const re = new RegExp(`\\b${additionalWords}\\b`, 'i')
+  const re = new RegExp(
+    `\\b${additionalWords}${additionalWords.endsWith('?') ? '' : '\\b'}`,
+    'i'
+  )
   if (!re.test(sentence)) return false
 
   const newSentence = sentence.replace(re, '').replace(/\s{2,}/g, ' ')
@@ -48,10 +51,12 @@ function getAll(quero) {
 }
 
 const query = `
-in
-on
-at
+(for|with|to|by|at|in|on|about|from|like)\\?
 `
+
+//have .*\\?
+//how (many|much|often|far|long)
+// have .*\\?
 
 // const s = getAll().filter(f => f.split(' ').length > 5)
 // console.log(s.join('\n'))
@@ -64,5 +69,5 @@ const allAll = query
     console.log(i, query.split('\n').filter(Boolean).length)
     return getAll(q)
   })
-
-fs.writeFileSync(__dirname + '/in-on-at.json', JSON.stringify(allAll, null, 2))
+console.log(allAll[0].filter(s => s.length < 30).join('\n'))
+// fs.writeFileSync(__dirname + '/in-on-at.json', JSON.stringify(allAll, null, 2))

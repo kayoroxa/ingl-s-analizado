@@ -8,18 +8,22 @@
   </head>
   <link rel="stylesheet" href="style.css" />
   <body>
-    <header>
-      <h1>CTS</h1>
-      <h3 id="head">Dê o play...</h3>
-    </header>
+    <div id="app">
+      <header>
+        <h1>CTS</h1>
+        <h3 id="head">Dê o play...</h3>
+        <h6 id="head-2">Dê o play...</h6>
+      </header>
 
-    <div class="playerWrapper">
-      <div id="player"></div>
-    </div>
+      <div class="playerWrapper">
+        <div id="player"></div>
+      </div>
 
-    <div class="buttons">
-      <button onclick="next()">Play</button>
-      <button onclick="repetir()">Repetir</button>
+      <div class="buttons">
+        <button onclick="prev()">Prev <<</button>
+        <button id="next" onclick="next()">Play</button>
+        <button onclick="repetir()">Repetir</button>
+      </div>
     </div>
 
     <script src="./result/result.js"></script>
@@ -48,6 +52,7 @@
             onReady: onPlayerReady,
             onStateChange: onPlayerStateChange,
           },
+          playerVars: { fs: 0 },
         })
       }
 
@@ -81,17 +86,104 @@
       //     console.log(data)
       //   })
 
-      function next() {
-        number++
-        document.querySelector('#head').textContent =
+      let playing = false
+      let fullscreen = false
+
+      document.addEventListener('keydown', e => {
+        if (e.key === '.') next()
+        if (e.key === ',') prev()
+        if (e.key.toLowerCase() === 'w' || e.key.toLowerCase() === '2') {
+          e.preventDefault()
+          velocityUp()
+        }
+        if (e.key.toLowerCase() === 'q' || e.key.toLowerCase() === '1') {
+          e.preventDefault()
+          velocityDown()
+        }
+        if (e.key === ' ') {
+          e.preventDefault()
+          if (!playing) {
+            playing = true
+            player.playVideo()
+            document.querySelector('#next').textContent = 'Next >>'
+          } else {
+            playing = false
+            player.pauseVideo()
+          }
+        }
+        if (e.key.toLowerCase() === 'f') {
+          e.preventDefault()
+          fullscreen = true
+          if (!fullscreen) openFullscreen()
+          else closeFullscreen()
+        }
+        if (e.key === 'Esc') {
+          closeFullscreen()
+        }
+      })
+
+      function velocityDown() {
+        const prev = player.getPlaybackRate()
+        player.setPlaybackRate(Math.max(0.25, prev - 0.25))
+      }
+
+      function velocityUp() {
+        const prev = player.getPlaybackRate()
+        player.setPlaybackRate(Math.min(4, prev + 0.25))
+      }
+
+      function prev() {
+        number--
+
+        const words = result[number].text.split(' ')
+        document.querySelector('#head').textContent = words
+          .map((w, i) => (i == 0 || i == words.length - 1 ? w : '___'))
+          .join(' ')
+        document.querySelector('#head-2').textContent =
           number + 1 + '| ' + result[number].text
         player.seekTo(result[number].startTime - 1 || 0)
-        document.querySelector('button').textContent = 'Next'
+      }
+      function next() {
+        number++
+
+        const words = result[number].text.split(' ')
+        document.querySelector('#head').textContent = words
+          .map((w, i) => (i == 0 || i == words.length - 1 ? w : '___'))
+          .join(' ')
+        document.querySelector('#head-2').textContent =
+          number + 1 + '| ' + result[number].text
+        player.seekTo(result[number].startTime - 1 || 0)
+        document.querySelector('#next').textContent = 'Next >>'
       }
 
       function repetir() {
         if (number === -1) number++
         player.seekTo(result[number].startTime - 1)
+      }
+
+      function openFullscreen() {
+        const elem = document.querySelector('#app')
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen()
+        } else if (elem.webkitRequestFullscreen) {
+          /* Safari */
+          elem.webkitRequestFullscreen()
+        } else if (elem.msRequestFullscreen) {
+          /* IE11 */
+          elem.msRequestFullscreen()
+        }
+      }
+
+      function closeFullscreen() {
+        if (document.exitFullscreen) {
+          document.exitFullscreen()
+        } else if (document.webkitExitFullscreen) {
+          /* Safari */
+          document.webkitExitFullscreen()
+        } else if (document.msExitFullscreen) {
+          /* IE11 */
+          document.msExitFullscreen()
+        }
       }
     </script>
     <script src="https://www.youtube.com/iframe_api"></script>
