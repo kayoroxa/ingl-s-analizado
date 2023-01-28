@@ -11,8 +11,8 @@
     <div id="app">
       <header>
         <h1>CTS</h1>
-        <h3 id="head">Dê o play...</h3>
-        <h6 id="head-2">Dê o play...</h6>
+        <h1 id="head">...</h1>
+        <h6 id="head-2">...</h6>
       </header>
 
       <div class="playerWrapper">
@@ -89,9 +89,12 @@
       let playing = false
       let fullscreen = false
 
-      document.addEventListener('keydown', e => {
-        if (e.key === '.') next()
-        if (e.key === ',') prev()
+      window.addEventListener('keydown', e => {
+        if (e.key === '.' || e.key.toLowerCase() === 'd') next()
+        if (e.key === ',' || e.key.toLowerCase() === 'a') prev()
+        if (e.key.toLowerCase() === 's' || e.key.toLowerCase() === 'r') {
+          repetir()
+        }
         if (e.key.toLowerCase() === 'w' || e.key.toLowerCase() === '2') {
           e.preventDefault()
           velocityUp()

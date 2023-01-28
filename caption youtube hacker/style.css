@@ -24,6 +24,10 @@ button {
   width: 100%;
 }
 
+#head {
+  font-size: 40px;
+}
+
 .playerWrapper {
   width: 100%;
   display: flex;
