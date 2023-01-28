@@ -21,7 +21,7 @@
 
       <div class="buttons">
         <button onclick="prev()">Prev <<</button>
-        <button id="next" onclick="next()">Play</button>
+        <button id="next" onclick="next()">Next >></button>
         <button onclick="repetir()">Repetir</button>
       </div>
     </div>
@@ -113,7 +113,7 @@
         }
         if (e.key.toLowerCase() === 'f') {
           e.preventDefault()
-          fullscreen = true
+
           if (!fullscreen) openFullscreen()
           else closeFullscreen()
         }
@@ -172,6 +172,7 @@
           /* IE11 */
           elem.msRequestFullscreen()
         }
+        fullscreen = true
       }
 
       function closeFullscreen() {
@@ -184,6 +185,7 @@
           /* IE11 */
           document.msExitFullscreen()
         }
+        fullscreen = false
       }
     </script>
     <script src="https://www.youtube.com/iframe_api"></script>
