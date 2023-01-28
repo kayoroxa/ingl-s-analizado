@@ -92,8 +92,11 @@
       window.addEventListener('keydown', e => {
         if (e.key === '.' || e.key.toLowerCase() === 'd') next()
         if (e.key === ',' || e.key.toLowerCase() === 'a') prev()
-        if (e.key.toLowerCase() === 's' || e.key.toLowerCase() === 'r') {
+        if (e.key.toLowerCase() === 's') {
           repetir()
+        }
+        if (e.key.toLowerCase() === 'r') {
+          player.setPlaybackRate(1)
         }
         if (e.key.toLowerCase() === 'w' || e.key.toLowerCase() === '2') {
           e.preventDefault()
