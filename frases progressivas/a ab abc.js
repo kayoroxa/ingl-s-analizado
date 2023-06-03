@@ -11,7 +11,7 @@ function getMediaScore(sentence, similarSentences) {
   return all.reduce((a, b) => a + b, 0) / all.length
 }
 
-`
+;`
 I just want you to think about it.
 Do you want him to know about it?
 You don't know how to do it, do you?
@@ -51,8 +51,8 @@ What do you want to do in the future?
 
 function getSentences() {
   return getAllSentences({
-    topUsed: 100,
-    topCogite: 100,
+    topUsed: 2000,
+    topCogite: 300,
     minLength: 30,
     maxLength: 40,
   })
@@ -61,7 +61,7 @@ function getSentences() {
 async function app() {
   let frases = await saveProgress(
     getSentences,
-    './sentences_t-100_c-100_mi-30_ma-40.json'
+    './sentences_t-2000_c-300_mi-30_ma-40.json'
   )
 
   const gotFrases = []
@@ -85,7 +85,7 @@ async function app() {
         ...gotFrases.slice(-8),
       ])
 
-      if (score >= 0.3 && score < 0.5) {
+      if (score >= 0.6 && score < 0.8) {
         return true
       }
     })

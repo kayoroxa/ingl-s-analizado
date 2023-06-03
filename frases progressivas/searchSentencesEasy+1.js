@@ -7,7 +7,7 @@ const txt = fs.readFileSync(
   joinPath(__dirname, '../890k sentences in english.txt'),
   { encoding: 'utf-8' }
 )
-let _commonWords = require('../words most used.json').slice(0, 200)
+let _commonWords = require('../words most used.json').slice(0, 2000)
 let cogite = require('../cogite_words/cogite_words.json')
   .map(v => v[0])
   .slice(0, 100)
@@ -93,10 +93,11 @@ function getAll(quero, options) {
 //(are|is|be|been|being|am|was|were)
 
 const query = `
--ing
+how long do i want it to be working
 `
 
 const query2 = `
+-\\b(\\w{2,})\\w*\\b\\s+(\\w{2,})\\w*\\b\\s+\\2\\w*\\b
 (too|as well|also|either)
 how many times
 how long
@@ -156,7 +157,7 @@ function app() {
   const hasQuery = query.trim().length > 0
 
   if (hasQuery) {
-    const allAll = query
+    let allAll = query
       .split('\n')
       .filter(Boolean)
       .map((q, i) => {
@@ -166,21 +167,27 @@ function app() {
           f => !f.match(/(is|am|are|was|were|'m|'s|'re|be)/gi)
         )
       })
+      .filter(groupSentences =>
+        groupSentences.filter(s => s.length > 10 && s.length < 25)
+      )
+
+    // allAll = allAll.map(group => sortBySimilarity(group, 0.2))
 
     allAll.forEach((group, index) => {
-      const sentences = group.filter(s => s.length > 20 && s.length < 30)
+      const sentences = group.filter(s => s.length > 10 && s.length < 25)
       deleted.delBySize = group.length - sentences.length
       if (sentences.length === 0) return
 
       console.log('\n')
       console.log(query.split('\n').filter(Boolean)[index])
       // const sortedSentence = sentences.sort(sortByCTS)
-      const sortedSentence = sortBySimilarity(sentences)
+      const sortedSentence = sortBySimilarity(sentences, 0.8)
       console.log(sortedSentence.join('\n'))
+      console.log('qnt:', sortedSentence.length)
     })
 
     console.log('\n')
-    console.log(allAll.map(g => g.length))
+
     console.log(deleted)
   } else {
     const me = getAll(false, { minLength: 40, maxLength: 50 })

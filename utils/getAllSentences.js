@@ -60,7 +60,8 @@ function getAll(options, allSentences, quero) {
   // if (quero) commonWords = [quero, ...commonWords]
   console.log(allSentences.length)
 
-  const result = allSentences.filter(sentence => {
+  const result = allSentences.filter((sentence, i) => {
+    if (i % 1000 === 0) console.log(i)
     const words = sentence.toLowerCase().match(/[a-zA-Z][’'a-zA-Z]*/gi)
     if (!words) return false
     return checkWords({ sentence, additionalWords: quero, ...options })

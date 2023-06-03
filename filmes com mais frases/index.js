@@ -1,11 +1,15 @@
 const { readSrt, getAllTextFromMovie } = require('../cenas progressivas/funcs')
-
+const words = require('../words most used.json').slice(0, 1000)
 const srtDatas = readSrt('../movie srt')
 
 const allMoviesTextsWithPath = srtDatas.map(v => getAllTextFromMovie(v))
 
 function getScore(text) {
-  const wordsLen = text.split(' ').length
+  const wordsInText = text.toLowerCase().split(' ')
+
+  const wordsFiltered = wordsInText.filter(w => words.includes(w))
+
+  const wordsLen = wordsFiltered.length
 
   return wordsLen
 }
