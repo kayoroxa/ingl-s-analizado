@@ -67,12 +67,15 @@ function getScore(text, searchQuery) {
 }
 
 function readSrt(path) {
-  return folderAnalyser(pathJoin(__dirname, path), {
-    filterExt: '.srt',
-    readMode: true,
-    time: true,
-    showFileInfo: true,
-  })
+  return folderAnalyser(
+    path.includes('C:') ? path : pathJoin(__dirname, path),
+    {
+      filterExt: '.srt',
+      readMode: true,
+      time: true,
+      showFileInfo: true,
+    }
+  )
 }
 
 module.exports = { getScene, getScore, readSrt, getAllTextFromMovie }

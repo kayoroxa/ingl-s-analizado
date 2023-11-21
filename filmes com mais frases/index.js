@@ -1,25 +1,41 @@
 const { readSrt, getAllTextFromMovie } = require('../cenas progressivas/funcs')
-const words = require('../words most used.json').slice(0, 1000)
-const srtDatas = readSrt('../movie srt')
+const words = require('../words most used.json').slice(0, 3000)
+const srtDatas = readSrt(
+  'C:/Users/Caio/OneDrive/SYNC - INGLÊS FLIX/others/srts/movie srt'
+)
 
-const allMoviesTextsWithPath = srtDatas.map(v => getAllTextFromMovie(v))
+const allMoviesTextsWithPath = srtDatas.map(v => {
+  return {
+    content: getAllTextFromMovie(v),
+    timeCompleteMovie: v.content[v.content.length - 1]?.endTime / 1000,
+  }
+})
 
 function getScore(text) {
-  const wordsInText = text.toLowerCase().split(' ')
+  const wordsInText = text.toLowerCase().match(new RegExp(`[’'a-zA-Z]+`, 'gi'))
+  if (!wordsInText) return 0
 
-  const wordsFiltered = wordsInText.filter(w => words.includes(w))
+  const wordsFiltered = wordsInText?.filter(w => words.includes(w))
 
   const wordsLen = wordsFiltered.length
 
   return wordsLen
 }
 
-const scored = allMoviesTextsWithPath.map(({ fileInfo, content }) => {
+let scored = allMoviesTextsWithPath.map(({ content, timeCompleteMovie }) => {
+  const wordsLength = content.content.match(
+    new RegExp(`[’'a-zA-Z]+`, 'gi')
+  )?.length
   return {
-    fileInfo,
-    score: getScore(content),
+    fileInfo: content.fileInfo,
+    score: getScore(content.content) / wordsLength,
+    // wordsLength,
+    timeCompleteMovie,
+    wordsBySecond: wordsLength / timeCompleteMovie,
   }
 })
 
-const sorted = scored.sort((a, b) => a.score - b.score)
+// scored = scored.filter(v => v.wordsBySecond > 1)
+
+const sorted = scored.sort((a, b) => a.score - b.score).slice(-20)
 console.log(sorted)

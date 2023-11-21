@@ -1321,7 +1321,7 @@ strip-json-comments@~2.0.1:
 subtitles-parser@^0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/subtitles-parser/-/subtitles-parser-0.0.2.tgz#cf2fcc3e397b1c7f831e1365f6b3ce37d3155194"
-  integrity sha1-zy/MPjl7HH+DHhNl9rPON9MVUZQ=
+  integrity sha512-7JermakMYQRrn9mTG5mXzbHeIqU8DINY06xuUVt3wxTVf7OiXN2aN/+g2oVVl5HISoPwabnQE0vlaFqo1mgLHQ==
 
 supports-color@^7.1.0:
   version "7.2.0"

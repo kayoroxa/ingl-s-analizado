@@ -1,10 +1,68 @@
 const fs = require('fs')
 const joinPath = require('path').join
+const parser = require('subtitles-parser')
 
-const txt = fs.readFileSync(
-  joinPath(__dirname, '../890k sentences in english.txt'),
-  { encoding: 'utf-8' }
-)
+function allFriendsSentences({ joinText = false }) {
+  const folderPath =
+    'C:/Users/Caio/OneDrive/SYNC - INGLÊS FLIX/subtitles/friends subtitles'
+
+  const files = fs.readdirSync(folderPath).filter(file => file.endsWith('.srt'))
+
+  const allFiles = files.map(file => {
+    const text = fs.readFileSync(joinPath(folderPath, file), {
+      encoding: 'utf-8',
+    })
+
+    return text
+  })
+
+  let allSentences = allFiles
+    .map(file => parser.fromSrt(file, true))
+    .map(srt => srt.map(s => s.text.replace(/\n/g, '')))
+    .filter(s => s.length > 0)
+    .reduce((prev, cur) => {
+      return prev.concat(cur)
+    }, [])
+
+  console.log(`📚 Read friends series: ${allSentences.length} sentences`)
+
+  if (!joinText) return allSentences
+  else {
+    const allText = allSentences.join(' ').toLowerCase()
+    return allText
+  }
+}
+
+function allDialoguesSentences({ joinText = false }) {
+  const folderPath =
+    'C:/Users/Caio/OneDrive/SYNC - INGLÊS FLIX/DATASET ENGLISH/dialogos'
+
+  const files = fs.readdirSync(folderPath).filter(file => file.endsWith('.txt'))
+
+  const allFiles = files.map(file => {
+    const text = fs.readFileSync(joinPath(folderPath, file), {
+      encoding: 'utf-8',
+    })
+
+    return text
+  })
+
+  let allSentences = allFiles
+    .map(file => file.split(/[\r\n]+/g))
+    .map(srt => srt.map(s => s.replace(/\n/g, '')))
+    .filter(s => s.length > 0)
+    .reduce((prev, cur) => {
+      return prev.concat(cur)
+    }, [])
+
+  console.log(`📚 Read dialogues: ${allSentences.length} sentences`)
+
+  if (!joinText) return allSentences
+  else {
+    const allText = allSentences.join(' ').toLowerCase()
+    return allText
+  }
+}
 
 function checkWords({
   sentence,
@@ -72,21 +130,23 @@ function getAll(options, allSentences, quero) {
   return result
 }
 
-const initOp = {
-  topUsed: 40,
-  topCogite: 40,
-  minLength: 20,
-  maxLength: 50,
-}
-
 function getAllSentences({
-  topUsed,
-  topCogite,
+  db = 'default',
+  joinText = false,
+  topUsed = 40,
+  topCogite = 40,
   additionalWords,
   slice,
-  minLength,
-  maxLength,
-} = initOp) {
+  minLength = 20,
+  maxLength = 50,
+}) {
+  if (db === 'friends') {
+    return allFriendsSentences({ joinText })
+  }
+  if (db === 'dialogues') {
+    return allDialoguesSentences({ joinText })
+  }
+
   let _commonWords = require('../words most used.json').slice(0, topUsed)
 
   let cogite = require('../cogite_words/cogite_words.json')
@@ -94,6 +154,12 @@ function getAllSentences({
     .slice(0, topCogite)
 
   let commonWords = [..._commonWords, ...cogite]
+
+  const txt = fs.readFileSync(
+    joinPath(__dirname, '../890k sentences in english.txt'),
+    { encoding: 'utf-8' }
+  )
+
   const allSentences = slice
     ? txt.split('\r\n').slice(0, 100)
     : txt.split('\r\n')
