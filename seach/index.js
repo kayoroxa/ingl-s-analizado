@@ -42,7 +42,7 @@ function getAllChunks() {
   // )
 }
 function getAllFrequency() {
-  const query = `
+  let query = `
 reading a book
 talks to me
 in the morning
@@ -70,14 +70,22 @@ someone
 no one
 my son
 me
-at my \\w+
+at my 
 at my apartment
 i don't know why
 because i want it
 when i was there
+at my home
+watch tv
+at the _
+travel
+wants to
 `
+    .replace(/_/g, '\\w+\\b')
     .trim()
     .split('\n')
+
+  query = [...new Set(query)]
 
   function getFrequency(frases) {
     if (frases.length === 1) {
@@ -99,7 +107,7 @@ when i was there
     // return sorted.map(v => v[0])
   }
 
-  const oi = query
+  const results = query
     .map(q => ({
       // q,
       ls:
@@ -109,9 +117,16 @@ when i was there
       l: text.match(new RegExp(q, 'gi'))?.length || 0,
     }))
     .sort((a, b) => b.l - a.l)
-    .filter(v => v.l > 2)
 
-  console.log(oi)
+  let resultsFilter = results.filter(v => v.l > 1)
+
+  console.log(resultsFilter.reverse())
+
+  const bads = query
+    .filter(s => !resultsFilter.some(({ ls }) => ls.includes(s)))
+    .join('\n')
+
+  console.log('\n\n' + '-- 👎'.repeat(6) + '\n\n' + bads + '\n')
 }
 
 getAllFrequency()

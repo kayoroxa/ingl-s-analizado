@@ -1,10 +1,23 @@
 const { getScene, readSrt } = require('../cenas progressivas/funcs')
+const getAllSentences = require('../utils/getAllSentences')
 const cogiteWords = require('../cogite_words/cogite_words.json').map(v => v[0])
-const mostUsedWords = require('../words most used.json').slice(0, 1000)
+const mostUsedWords = require('../words-most-used-friends.json').slice(0, 1000)
+
+const folder =
+  'E:/series/Gilmore.Girls.Complete.S01-S07.REPACK.1080p.WEB-DL.x265.10bit.HEVC-MONOLITH/Season 7'
 
 const magicWords = [...cogiteWords, ...mostUsedWords]
 
-const srtDatas = readSrt('../movie srt')
+// const srtDatas = readSrt('../movie srt')
+
+const srtDatas = getAllSentences({
+  folder: 'C:/Users/Caio/OneDrive/SYNC - INGLÊS FLIX/subtitles/the-office',
+  srt: true,
+  joinText: true,
+  withPath: true,
+})
+
+// console.log(srtDatas)
 
 function getScore(text) {
   const words = text.toLowerCase().match(/[’'a-zA-Z]+/gi)
@@ -26,9 +39,7 @@ function scoreAndSort(scenes) {
   return score.sort((a, b) => b.score - a.score)
 }
 
-const allScenes = srtDatas.map(v =>
-  getScene(v.content, { path: v.fileInfo.path })
-)
+const allScenes = srtDatas.map(v => getScene(v.data, { path: v.path }))
 
 const allSort = scoreAndSort([].concat(...allScenes))
 
@@ -36,6 +47,32 @@ console.log(
   allSort.filter(({ score }) => score > 0.85).length + '/' + allSort.length
 )
 
-// console.log(
-//   allSort.slice(0, 200).map(v => ({ text: v.value.text, score: v.score }))
-// )
+function secondsToHMS(seconds) {
+  seconds = seconds / 1000
+  var hours = Math.floor(seconds / 3600)
+  var minutes = Math.floor((seconds % 3600) / 60)
+  var remainingSeconds = seconds % 60
+
+  // Add leading zero if single digit
+  hours = hours < 10 ? '0' + hours : hours
+  minutes = minutes < 10 ? '0' + minutes : minutes
+  remainingSeconds =
+    remainingSeconds < 10 ? '0' + remainingSeconds : remainingSeconds
+
+  return (
+    Math.round(hours) +
+    ':' +
+    Math.round(minutes) +
+    ':' +
+    Math.round(remainingSeconds)
+  )
+}
+
+console.log(
+  allSort.slice(0, 200).map(v => ({
+    text: v.value.text,
+    score: v.score,
+    startTime: secondsToHMS(v.value.startTime),
+    path: v.value.path,
+  }))
+)

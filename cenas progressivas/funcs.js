@@ -38,6 +38,8 @@ function getScene(movieSrt, payload) {
       allScenes.push({
         ...payload,
         startID: sentenceSubData.id,
+        startTime: sentenceSubData.startTime,
+        endTime: sentenceSubData.endTime,
         text: sentenceSubData.text,
       })
     } else {

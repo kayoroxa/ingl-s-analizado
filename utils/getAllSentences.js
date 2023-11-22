@@ -139,7 +139,31 @@ function getAllSentences({
   slice,
   minLength = 20,
   maxLength = 50,
+  srt = false,
+  folder = false,
+  withPath = false,
 }) {
+  if (folder && srt) {
+    const allFiles = fs
+      .readdirSync(folder)
+      .filter(file => file.endsWith('.srt'))
+    const allSentences = allFiles.map(file => {
+      const text = fs.readFileSync(joinPath(folder, file), {
+        encoding: 'utf-8',
+      })
+
+      const dataSrt = parser.fromSrt(text, true)
+      if (withPath) {
+        return {
+          data: dataSrt,
+          path: file,
+        }
+      }
+      return dataSrt
+    })
+    return allSentences
+  }
+
   if (db === 'friends') {
     return allFriendsSentences({ joinText })
   }
