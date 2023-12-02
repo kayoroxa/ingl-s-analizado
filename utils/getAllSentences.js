@@ -133,7 +133,7 @@ function getAll(options, allSentences, quero) {
 function getSentences({ joinText = false }) {
   const txt = fs.readFileSync(
     joinPath(
-      'C:/Users/Caio/OneDrive/SYNC - INGLÊS FLIX/890k sentences in english.txt'
+      '"C:/Users/Caio/OneDrive/SYNC - INGLÊS FLIX/890k sentences in english.txt"'
     ),
     { encoding: 'utf-8' }
   )
@@ -190,7 +190,10 @@ function getAllSentences({
     return getSentences({ joinText })
   }
 
-  let _commonWords = require('../words most used.json').slice(0, topUsed)
+  let _commonWords = require('../words-most-used-sentences.json').slice(
+    0,
+    topUsed
+  )
 
   let cogite = require('../cogite_words/cogite_words.json')
     .map(v => v[0])
@@ -199,7 +202,9 @@ function getAllSentences({
   let commonWords = [..._commonWords, ...cogite]
 
   const txt = fs.readFileSync(
-    joinPath(__dirname, '../890k sentences in english.txt'),
+    joinPath(
+      'C:/Users/Caio/OneDrive/SYNC - INGLÊS FLIX/890k sentences in english.txt'
+    ),
     { encoding: 'utf-8' }
   )
 

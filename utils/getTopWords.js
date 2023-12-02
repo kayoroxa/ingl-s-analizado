@@ -4,7 +4,7 @@ const joinPath = require('path').join
 const getAllSentences = require('./getAllSentences')
 
 const text = getAllSentences({
-  db: 'friends',
+  db: 'sentences',
   joinText: true,
 })
 
@@ -23,6 +23,6 @@ function getTopWords(dbTextStr) {
 }
 
 fs.writeFileSync(
-  joinPath(__dirname, '../words-most-used-friends.json'),
+  joinPath(__dirname, '../words-most-sentences.json'),
   JSON.stringify(getTopWords(text), null, 2)
 )

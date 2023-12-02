@@ -3,7 +3,9 @@ const saveProgress = require('../utils/saveProgress')
 const joinPath = require('path').join
 
 const txt = fs.readFileSync(
-  joinPath(__dirname, '../890k sentences in english.txt'),
+  joinPath(
+    'C:/Users/Caio/OneDrive/SYNC - INGLÊS FLIX/890k sentences in english.txt'
+  ),
   { encoding: 'utf-8' }
 )
 let _commonWords = require('../words most used.json').slice(0, 1500)

@@ -25,7 +25,9 @@ Array.prototype.removeByValue = function (val) {
 // const uniqAllWords = [...new Set(allWords)]
 
 const txt = fs.readFileSync(
-  pathJoin(__dirname, '../890k sentences in english.txt'),
+  pathJoin(
+    'C:/Users/Caio/OneDrive/SYNC - INGLÊS FLIX/890k sentences in english.txt'
+  ),
   {
     encoding: 'utf-8',
   }

@@ -51,9 +51,9 @@ What do you want to do in the future?
 
 function getSentences() {
   return getAllSentences({
-    topUsed: 2000,
+    topUsed: 1000,
     topCogite: 300,
-    minLength: 30,
+    minLength: 20,
     maxLength: 40,
   })
 }
@@ -61,7 +61,7 @@ function getSentences() {
 async function app() {
   let frases = await saveProgress(
     getSentences,
-    './sentences_t-2000_c-300_mi-30_ma-40.json'
+    './sentences_t-1000_c-300_mi-20_ma-40.json'
   )
 
   const gotFrases = []
