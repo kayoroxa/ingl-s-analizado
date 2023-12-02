@@ -130,6 +130,22 @@ function getAll(options, allSentences, quero) {
   return result
 }
 
+function getSentences({ joinText = false }) {
+  const txt = fs.readFileSync(
+    joinPath(
+      'C:/Users/Caio/OneDrive/SYNC - INGLÊS FLIX/890k sentences in english.txt'
+    ),
+    { encoding: 'utf-8' }
+  )
+
+  const allSentences = txt.split('\r\n')
+
+  if (!joinText) return allSentences
+
+  const allText = allSentences.join(' ')
+  return allText
+}
+
 function getAllSentences({
   db = 'default',
   joinText = false,
@@ -169,6 +185,9 @@ function getAllSentences({
   }
   if (db === 'dialogues') {
     return allDialoguesSentences({ joinText })
+  }
+  if (db === 'sentences') {
+    return getSentences({ joinText })
   }
 
   let _commonWords = require('../words most used.json').slice(0, topUsed)

@@ -1,10 +1,10 @@
-const { getScene, readSrt } = require('../cenas progressivas/funcs')
+const { getScene } = require('../cenas progressivas/funcs')
 const getAllSentences = require('../utils/getAllSentences')
 const cogiteWords = require('../cogite_words/cogite_words.json').map(v => v[0])
 const mostUsedWords = require('../words-most-used-friends.json').slice(0, 1000)
 
-const folder =
-  'E:/series/Gilmore.Girls.Complete.S01-S07.REPACK.1080p.WEB-DL.x265.10bit.HEVC-MONOLITH/Season 7'
+// const folder =
+// 'E:/series/Gilmore.Girls.Complete.S01-S07.REPACK.1080p.WEB-DL.x265.10bit.HEVC-MONOLITH/Season 7'
 
 const magicWords = [...cogiteWords, ...mostUsedWords]
 
@@ -41,7 +41,7 @@ function scoreAndSort(scenes) {
 
 const allScenes = srtDatas.map(v => getScene(v.data, { path: v.path }))
 
-const allSort = scoreAndSort([].concat(...allScenes))
+let allSort = scoreAndSort([].concat(...allScenes))
 
 console.log(
   allSort.filter(({ score }) => score > 0.85).length + '/' + allSort.length
@@ -67,6 +67,17 @@ function secondsToHMS(seconds) {
     Math.round(remainingSeconds)
   )
 }
+
+allSort = allSort
+  .filter(
+    ({ score, value }) =>
+      score > 0.85 &&
+      value.text.length > 80 &&
+      value.path.startsWith('The Office (US) (2005) - S02E10')
+  )
+  .slice(0, 60)
+
+allSort.reverse()
 
 console.log(
   allSort.slice(0, 200).map(v => ({

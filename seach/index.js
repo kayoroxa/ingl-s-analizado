@@ -3,44 +3,12 @@ const fs = require('fs')
 const joinPath = require('path').join
 
 const getAllSentences = require('../utils/getAllSentences')
-const words = require('../words-most-used-friends.json').slice(0, 1300)
 
 const text = getAllSentences({
   db: 'dialogues',
   joinText: true,
 })
 
-function getAllChunks() {
-  const numberBlocks = 2
-  const frequencyMin = 2
-
-  let rawChunks = text
-    .match(
-      new RegExp(
-        `(${words.join('\\b|\\b')}|\\s){${numberBlocks * 2 + 1},}`,
-        'gi'
-      )
-    )
-    .filter(c => c.trim().length > numberBlocks * 2 + 1)
-
-  let countChunks = {}
-
-  for (let chunk of rawChunks) {
-    chunk = chunk.trim()
-    countChunks[chunk] = (countChunks[chunk] || 0) + 1
-  }
-
-  let sorted = Object.entries(countChunks)
-    .sort((a, b) => b[1] - a[1])
-    .filter(v => v[1] >= frequencyMin)
-
-  console.log(sorted)
-
-  // fs.writeFileSync(
-  //   joinPath(__dirname, 'chunks-must-used-friends.json'),
-  //   JSON.stringify(sorted, null, 2)
-  // )
-}
 function getAllFrequency() {
   let query = `
 reading a book
