@@ -10,14 +10,16 @@ const text = getAllSentences({
 
 function getAllChunks() {
   const numberBlocks = 2
-  const frequencyMin = 2
-  const maxWords = 4
+  const maxBlocks = 3
+  const frequencyMin = 30
   const minWords = 2
 
   let rawChunks = text
     .match(
       new RegExp(
-        `(${words.join('\\b|\\b')}|\\s){${numberBlocks * 2 + 1},}`,
+        `(${words.join('\\b|\\b')}|\\s){${numberBlocks * 2 + 1},${
+          maxBlocks ? maxBlocks * 2 : ''
+        }}`,
         'gi'
       )
     )
@@ -43,7 +45,7 @@ function getAllChunks() {
       v =>
         v[1] >= frequencyMin &&
         v[0] &&
-        getWords(v[0]).length <= maxWords &&
+        // getWords(v[0]).length <= maxWords &&
         getWords(v[0], true).length >= minWords
     )
     .sort((a, b) => b[1] - a[1])
